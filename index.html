@@ -2,37 +2,79 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="robots" content="index,follow">
-    <link rel="shortcut icon" href="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/favicon.png">
-    <link rel="stylesheet" href="./css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damián Valenzuela Negrete</title>
+    <title>Damián V.N.</title>    
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        
-    </header>
-    <main>
-        <h3><b>Sitio en construcción</b></h3>
-        <img class="main__image" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/ingeniero.png" alt="En construcción">
-        <div class="main__logos">
-            <img class="logos" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/HTML5.png" alt="HMTL5">
-            <img class="logos" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/CSS3.png" alt="CSS3">
-        </div>
-        <div class="proyectos">
-            <p>Mientras tanto puedes ver un avance de algunos proyectos en los que estoy trabajando.</p>
-        </div>
-        <div class="proyectos__lista">
-            <ul>
-                <li><a href="https://dvnegrete.github.io/platzi_video/">Platzi Video </a> (Solo maquetación de algunas pantallas)</li>
-                <li><a href="https://dvnegrete.github.io/WikiClone/">WikiClone </a>(Versión 1.0, con HTML y CSS, para dispositivos mobile)</li>
-                <li><a href="https://dvnegrete.github.io/clonGoogle/">Clon de Google </a>(Maquetación terminada para dispositivos mobile)</li>
-                <li><a href="https://dvnegrete.github.io/cursoPracticoJS/">Calculadoras usando JavaScript </a>(aun en Desarrollo)</li>
-            </ul>
-        </div>
-    </main>
-    <footer>
-        <p>Damián V.N.</p>
-    </footer>    
+  <!-- Site header -->
+  <header class="header">
+    <ul class="nav-hide" id="nav">
+      <li>
+        <a href="#" class="">
+          home
+        </a>
+      </li>
+      <li>
+        <a href="./portafolio.html" class="">
+          project
+        </a>
+      </li>
+      <li>
+        <a href="#" class="">
+          skills
+        </a>
+      </li>
+      <li>
+        <a href="#" class="">
+          contact
+        </a>
+      </li>
+    </ul>    
+    <div class="header__menu" data-node="menu">
+      <div class="con" id="menu" data-node="menu">
+        <div class="bar top" data-node="menu"></div>
+        <div class="bar middle" data-node="menu"></div>
+        <div class="bar bottom" data-node="menu"></div>
+      </div>
+    </div>    
+  </header>
+<!--/ Site header -->
+
+<!-- Site main -->
+  <main class="main">
+    <div class="main__intro">
+      <h1>Hola, soy Damián!</h1>
+      <img class="main__intro__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/engranes.gif" alt="Engranes">
+      <h2>Full Stack Developer en proceso...</h2>      
+    </div>
+    <div class="main__container__redes">
+      <a href="https://twitter.com/dvnegrete">
+        <img class="main__redes__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/twitter-logo.png" alt="Twitter">
+      </a>
+      <a href="https://www.linkedin.com/in/dvnegrete/">
+        <img class="main__redes__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/linkend-logo.png" alt="linkedin">      
+      </a>
+    </div>
+    <div class="main__iam">   
+      <h3>Un poco sobre mi...</h3>
+      <p id="main__iam--p">
+    </div>
+    <section class="portafolio">
+      <h3 class="main__portafolio">Algunos proyectos creados</h3>
+    </section>
+
+    
+  </main>
+<!--/ Site main -->
+  
+  <!-- Site footer -->
+  <footer class="footer">
+      <div>
+        Hola, soy Damián!
+      </div>
+  </footer>
+  <!--/ Site footer -->
+  <script src="./index.js"></script>
 </body>
 </html>
