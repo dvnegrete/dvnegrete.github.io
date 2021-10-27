@@ -8,6 +8,9 @@
     --colorGradient1: #2d3d4c;
     --colorGradient2: #545a72;
     --colorGradient3: #837895;
+
+    --colorBoton: #fff;
+    --colorBotonReal: #F28123;
 }
 
 * {
@@ -35,113 +38,75 @@ body {
   justify-content: flex-end;
 }
 
-/*Creación del boton de menu */
+.menu__mobile {
+  stroke: var(--colorPalette5);
+  height: 30px;
+  z-index: 4;
+  display: block;
+  cursor: pointer;
+  margin: 5px 30px 0 0;
+}
 
-.con,
- .special-con {
-   cursor: pointer;
-   display: inline-block;
- }
-
- .bar {
-   display: block;
-   height: 5px;
-   width: 40px;
-   background: var(--colorPalette5);
-   margin: 10px auto;
- }
-
- .con {
-   width: auto;
-   margin: 0 auto;
-   -webkit-transition: all .7s ease;
-   -moz-transition: all .7s ease;
-   -ms-transition: all .7s ease;
-   -o-transition: all .7s ease;
-   transition: all .7s ease;
- }
-
- .header__menu {
-   display: block;
-   width: 24%;
-   text-align: center;
-   height: auto;   
-   z-index: 4;
- }
-
- .middle {
-   margin: 0 auto;
- }
-
- .bar {
-   -webkit-transition: all .4s ease;
-   -moz-transition: all .4s ease;
-   -ms-transition: all .4s ease;
-   -o-transition: all .4s ease;
-   transition: all .4s ease;
- }
-
-/* Pendiente Estilos de transicion al boton de menu */
-
- /* .con:hover .top {
-   -webkit-transform: translateY(15px) rotateZ(45deg);
-   -moz-transform: translateY(15px) rotateZ(45deg);
-   -ms-transform: translateY(15px) rotateZ(45deg);
-   -o-transform: translateY(15px) rotateZ(45deg);
-   transform: translateY(15px) rotateZ(45deg);
- }
-
- .con:hover .bottom {
-   -webkit-transform: translateY(-15px) rotateZ(-45deg);
-   -moz-transform: translateY(-15px) rotateZ(-45deg);
-   -ms-transform: translateY(-15px) rotateZ(-45deg);
-   -o-transform: translateY(-15px) rotateZ(-45deg);
-   transform: translateY(-15px) rotateZ(-45deg);
- }
-
- .con:hover .middle {
-   width: 0;
- } */
-
-/* Termina sección del boton de menu */
-
+.menu-hide{
+  display: none;
+}
 
 .header__nav {
-  position: absolute;  
-  right: 0vw;  
+  position: absolute;
+  right: 0vw;
   background-color: var(--colorPrincipal);
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  padding-top: 60px;
+  margin-top: 40px;  
   font-size: 2.7rem;
-  border-radius: 60px;
+  border-radius: 0 0 60px 60px;
   z-index: 3;
-  width: 100vw;
-  opacity: 1;
-
-  /* transition: */
-  
+  width: 100vw;  
 }
 
 .nav-hide {
-  display: none;  
+  display: none;
 }
 
-.header__nav li {
+/* .header__nav li {
   padding-bottom: 30px;
-}
+} */
 
 .header__nav a {
   color: var(--colorPalette5);
   text-decoration: none;
+  padding-bottom: 30px;
 }
 
 .header__nav a:hover{
   color:var(--colorGradient3);
   text-decoration: underline;
+}
+
+.navMin {
+  display: flex;
+  font-size: 2.7rem;
+  list-style: none;
+  margin-top: 2;
+}
+
+.navMin a {
+  color: var(--colorPalette5);
+  text-decoration: none;
+  padding-bottom: 30px;
+  margin-top: 10px;
+}
+
+.navMin a:hover{
+  color:var(--colorGradient3);
+  text-decoration: underline;
+}
+
+.navMin li {
+  padding: 15px 30px 0;
 }
 
 .main {
@@ -171,14 +136,14 @@ body {
 
 .main__intro__img{
   height: 400px;
-  opacity: 0.4;  
+  opacity: 0.5;
 }
 
 .main__container__redes {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border-radius: 100px;  
+  border-radius: 100px;
   min-width: 320px;
 }
 
@@ -191,12 +156,115 @@ body {
 
 .main__redes__img:hover {
   transform: scale(1.9);
-  padding: 4px;  
-  background: none;  
+  padding: 4px;
+  background: none;
 }
 
+.main__iam {
+  background: var(--colorGradient1);
+}
+
+/* Botones con efectos */
+.button-effect {
+  padding: 30px 0px
+}
+
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: var(--colorBoton);
+  text-transform: capitalize;
+  background-color: var(--colorPrincipal);
+  padding: 20px 0px;
+  width: 150px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--colorBotonReal);
+}
+
+.effect.effect-5 {
+  transition: all 0.2s linear 0s;
+}
+
+.effect.effect-5::before {
+  content: "\f054";
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 30px;
+  background-color: rgba(var(--colorBoton),0.3);
+  border-radius: 0 50% 50% 0;
+  transform: scale(0,1);
+  transform-origin: left center;
+  transition: all 0.2s linear 0s;
+}
+
+.effect.effect-5::content {
+
+}
+
+.effect.effect-5:hover {
+  text-indent: 30px
+}
+
+.effect.effect-5::before {
+  transform: scale(1,1);
+  text-indent: 0;
+}
+/* FIN Botones con efectos */
+
 .main__portafolio {
+
+}
+
+/* CSS para sitio temporal en construcción */
+.containerTemporal{
+  margin: 30px 0;
+
+}
+
+.temporal-image{
+  background-color: var(--colorPalette3);
+  opacity: 0.8;
+  border-radius: 50px;
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.temporal-image p {
+  font-size: 2.8rem;
+  padding: 40px 25px;
+}
+
+.temporal-image img {
+  max-width: 315px;
   
+}
+
+.temporal-image a {
+  color: var(--colorPalette5);
+  text-decoration: none;  
+}
+
+.temporal-image a:hover {
+  text-decoration: underline;
+  color: var(--colorBotonReal);
+}
+
+.temporal-image a:visited {
+  text-decoration: underline;
+  color: var(--colorBotonReal);
 }
 
 .footer {
@@ -206,7 +274,15 @@ body {
 }
 
 .footer > div {
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
+}
+
+
+@media (min-width: 530px){
+  .con {
+    display: none;
+  }
+
 }
 
 

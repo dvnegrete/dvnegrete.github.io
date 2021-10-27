@@ -5,12 +5,12 @@
     --colorPalette4: #ffc300;
     --colorPalette5: #ffd60a;
 
-    --colorGradient2: #94cf4d;
-    --colorGradient3: #2db373;
-    --colorGradient4: #009186;
-    --colorGradient5: #006c7c;
-    --colorGradient6: #2f4858;    
-    
+    --colorGradient1: #2d3d4c;
+    --colorGradient2: #545a72;
+    --colorGradient3: #837895;
+
+    --colorBoton: #fff;
+    --colorBotonReal: #F28123;
 }
 
 * {
@@ -36,7 +36,7 @@ header {
     display: inherit;
     justify-content: center;
     align-items: center;
-    color: #1b73ba;
+    color: var(--colorPalette4);
     font-size: 2rem;
 }
 
@@ -85,6 +85,19 @@ main > div {
     align-items: center;
 }
 
+.section a {
+    color: var(--colorPalette5);
+    text-decoration: none;
+    text-align: center;
+}
+
+.section a:visited {
+    color: var(--colorPalette5);
+    text-decoration: underline;    
+}
+
+
+
 .section__logos--img {
     width: 6rem;
 }
@@ -95,6 +108,14 @@ main > div {
 
 .image__previous--img {
     height: 100px;
+}
+
+.img-reduce{
+    height: 50px;
+}
+
+.image__previous--img:hover {
+    transform: scale(2.5);
 }
 
 .proyectos {
@@ -124,7 +145,7 @@ main > div {
 }
 
 footer {
-    color: var(--colorPrincipal);    
+    color: var(--colorPalette4);    
     height: 5rem;
     margin-top: auto;
     background: var(--colorGradient3);

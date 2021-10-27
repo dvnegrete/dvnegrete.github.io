@@ -3,78 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damián V.N.</title>    
+    <title>Damián V.N.</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <!-- Site header -->
-  <header class="header">
-    <ul class="nav-hide" id="nav">
-      <li>
-        <a href="#" class="">
-          home
-        </a>
-      </li>
-      <li>
-        <a href="./portafolio.html" class="">
-          project
-        </a>
-      </li>
-      <li>
-        <a href="#" class="">
-          skills
-        </a>
-      </li>
-      <li>
-        <a href="#" class="">
-          contact
-        </a>
-      </li>
-    </ul>    
-    <div class="header__menu" data-node="menu">
-      <div class="con" id="menu" data-node="menu">
-        <div class="bar top" data-node="menu"></div>
-        <div class="bar middle" data-node="menu"></div>
-        <div class="bar bottom" data-node="menu"></div>
-      </div>
-    </div>    
-  </header>
-<!--/ Site header -->
+ 
 
 <!-- Site main -->
   <main class="main">
     <div class="main__intro">
       <h1>Hola, soy Damián!</h1>
+      <h2>Frontend Developer...</h2>
       <img class="main__intro__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/engranes.gif" alt="Engranes">
-      <h2>Full Stack Developer en proceso...</h2>      
+      <h2> y Full Stack en proceso... :)</h2>
     </div>
     <div class="main__container__redes">
       <a href="https://twitter.com/dvnegrete">
         <img class="main__redes__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/twitter-logo.png" alt="Twitter">
       </a>
       <a href="https://www.linkedin.com/in/dvnegrete/">
-        <img class="main__redes__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/linkend-logo.png" alt="linkedin">      
+        <img class="main__redes__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/linkend-logo.png" alt="linkedin">
       </a>
     </div>
-    <div class="main__iam">   
-      <h3>Un poco sobre mi...</h3>
-      <p id="main__iam--p">
-    </div>
     <section class="portafolio">
-      <h3 class="main__portafolio">Algunos proyectos creados</h3>
+      <!-- <h3 class="main__portafolio">Algunos proyectos creados</h3> -->
+    </section>
+    <section class="containerTemporal">
+      <div class="temporal-image">
+        <p>Sitio en construcción...</p>
+        <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/ingeniero.png" alt="">
+        <p>...mientras tanto, algunos proyectos que he venido trabajando en la sección de <a href="./portafolio.html">portafolio</a></p>
+      </div>      
+      <div>
+        
+      </div>
     </section>
 
-    
+
   </main>
-<!--/ Site main -->
   
+
+<!--/ Site main -->
+
+  <!-- <section class="main__iam">
+    <h3>Un poco sobre mi...</h3>
+    <div class="button-effect">
+      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+    </div>
+  </section> -->
+
   <!-- Site footer -->
-  <footer class="footer">
+  <!-- <footer class="footer">
       <div>
         Hola, soy Damián!
       </div>
-  </footer>
+  </footer> -->
   <!--/ Site footer -->
+
+   <!-- Site header -->
+   <header class="header">
+    <ul class="nav-hide" id="nav">
+      <li>
+        <a href="#" class="">
+          inicio
+        </a>
+      </li>
+      <li>
+        <a href="./portafolio.html" class="">
+          portafolio
+        </a>
+      </li>
+      <li>
+        <a href="#" id="skills" data-node="noDisponible">
+          skills
+        </a>
+      </li>
+      <li>
+        <a href="#" data-node="noDisponible">
+          contacto
+        </a>
+      </li>
+    </ul>
+    <div class="con" data-node="menu">
+      <svg id="menuShow"class="menu__mobile" data-node="menu" viewBox="0 0 46 34.5" stroke-linecap="round" stroke-width="6px">
+          <line data-node="menu" x1="3" y1="17.25" x2="43" y2="17.25"/>
+          <line data-node="menu" x1="3" y1="31.5" x2="43" y2="31.5"/>
+          <line data-node="menu" x1="3" y1="3" x2="43" y2="3"/>
+      </svg>
+      <svg id="menuClose" class="menu-hide" data-node="menu" viewBox="0 0 31.71 36.64" stroke-linecap="round" stroke-width="6px">
+        <line data-node="menu" x1="3" y1="33.64" x2="28.71" y2="3"/>
+        <line data-node="menu" x1="28.71" y1="33.64" x2="3" y2="3"/>
+      </svg>
+    </div>
+  </header>
+<!--/ Site header -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="./index.js"></script>
 </body>
 </html>
