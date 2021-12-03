@@ -1,26 +1,14 @@
-const skillHTML5 = {
-    nameSkill: "HTML5",
-    imageSkill : "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/html5.png"
-};
-const skillCSS3 = {
-    nameSkill: "CSS3",
-    imageSkill : "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/css3.png"
-};
-const skillAWS = {
-    nameSkill: "S3 de Amazon Web Services",
-    imageSkill : "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/aws-logo.png"
-};
-const skillBootstrap = {
-    nameSkill: "Bootstrap",
-    imageSkill : "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/boostrap.png"
-};
-const skillJS = {
-    nameSkill: "JavaScript",
-    imageSkill : "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/javascript.png"
-};
+import { 
+    skillHTML5, 
+    skillCSS3, 
+    skillAWS, 
+    skillBootstrap, 
+    skillJS, 
+    skillReact, 
+    skillAzure
+} from "../Skills/skill.js";
 
-
-let briefcase = [
+let DB_briefcase = [
     {
       name : "googleClon",
       repository: "https://dvnegrete.github.io/clonGoogle/",
@@ -28,11 +16,11 @@ let briefcase = [
       skills : [skillHTML5, skillCSS3],
       previous : {
           mobile : "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/googleClon-mobile.jpg",
-          desktop,
-          other1
+          desktop: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/googleClon-desktop.jpg",
+        //   other1
       },
       state: "completado",
-      date: new Date([2021, 05, 15])
+    //   date: new Date([2021, 05, 15])
     },
 
     {
@@ -43,10 +31,10 @@ let briefcase = [
         previous : {
             mobile :"https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon-mobile.jpg",
             desktop: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon.jpg",
-            other1
+            other1: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon-mobile2.jpg"
         },
         state: "Completado",
-        date: new Date([2021, 06, 15])
+        // date: new Date([2021, 06, 15])
     },
     {
         name: "platziVideo",
@@ -56,10 +44,10 @@ let briefcase = [
         previous : {
             mobile: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/platziVideo.-mobile.jpg",
             desktop: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/platziVideo.jpg",
-            other1: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/platzi-video-iniciarSesion.jpg"
+            // other1,
         },       
         state: "Incompleto. Solo Maquetación. Pendiente continuación del desarrollo",
-        date: new Date([2021, 07, 15])
+        // date: new Date([2021, 07, 15])
     },
     {
         name: "calculatorsJS",
@@ -69,23 +57,23 @@ let briefcase = [
         previous : {
             mobile: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/calculadoras-tablet.jpg",
             desktop: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/calculadoras.jpg",
-            other1: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/calculadoras-tablet2.jpg"            
+            // other1
         },       
         state: "Completado",
-        date: new Date([2021, 08, 15])
+        // date: new Date([2021, 08, 15])
     },
     {
-        name: "apiAgucates",
+        name: "apiAguacates",
         repository : "https://dvnegrete.github.io/APIAguacates/",
         title : "Consulta a API para generar información de Aguacates",
         skills : [skillJS, skillBootstrap],
         previous : {
             mobile: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/apiAguacates-mobile.jpg",
             desktop: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/apiAguacates-desktop.jpg",
-            other1
+            // other1
         },       
         state: "Completado",
-        date: new Date([2021, 09, 01])
+        // date: new Date([2021, 09, 01])
     },
     {
         name: "comparativeStreaming",
@@ -95,10 +83,10 @@ let briefcase = [
         previous : {
             mobile: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/comparadorStreaming2.jpg",
             desktop: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/comparadorStreaming.jpg",
-            other1
+            // other1
         },       
         state: "Completado (En Busqueda de APIS Publicas para conseguir info real sobre el contenido actual de las plataformas)",
-        date: new Date([2021, 09, 15])
+        // date: new Date([2021, 09, 15])
     },
     {
         name: "cecati13",
@@ -108,9 +96,24 @@ let briefcase = [
         previous : {
             mobile: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-moblie.jpg",
             desktop: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-desktop.jpg",
-            other1
+            // other1
         },       
         state: "En Desarrollo...",
-        date: new Date([2021, 09, 15])
+        // date: new Date([2021, 09, 15])
+    },
+    {
+        name: "todoTask",
+        repository: "https://dvnegrete.github.io/todoTask/",
+        title: "Control de tareas personales",
+        skills: [skillReact],
+        previous: {
+            mobile:"https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/ToDo+Task-mobile.jpg",
+            desktop: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/ToDo+Task-mobile2.jpg",
+            // other1
+        }, 
+        state: "Funcionalidad completa. Faltan detalles de UX",
+        // date: new Date([2021, 12, 01])
     }
-]
+];
+
+export { DB_briefcase };

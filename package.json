@@ -1,0 +1,24 @@
+{
+  "name": "dvnegrete",
+  "version": "1.0.0",
+  "description": "<!-- **dvnegrete/dvnegrete** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dvnegrete/dvnegrete.git"
+  },
+  "keywords": [],
+  "author": "Damián Valenzuela <dvnegrete@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dvnegrete/dvnegrete/issues"
+  },
+  "homepage": "https://github.com/dvnegrete/dvnegrete#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
+}

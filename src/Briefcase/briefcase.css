@@ -1,0 +1,20 @@
+:root {
+    --colorPrincipal: #000814;
+    --colorPalette2: #001d3d;
+    --colorPalette3: #003566;
+    --colorPalette4: #ffc300;
+    --colorPalette5: #ffd60a;
+
+    --colorGradient1: #2d3d4c;
+    --colorGradient2: #545a72;
+    --colorGradient3: #837895;
+
+    --colorBoton: #fff;
+    --colorBotonReal: #F28123;
+}
+
+.elementNameProyect {
+    color: var(--colorPalette4);
+    background-color: var(--colorPalette3);
+    font-size: 2rem;
+}
