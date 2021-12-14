@@ -26,12 +26,11 @@ html {
 
 body {    
     display: grid;
-    grid-template: ;
+    background: linear-gradient(var(--colorPrincipal),var(--colorGradient1));
 }
 
 header {
-    height: 6rem;
-    background-color: var(--colorGradient2);
+    height: 6rem;    
     width: 100vw;
     display: inherit;
     justify-content: center;
@@ -40,8 +39,7 @@ header {
     font-size: 2rem;
 }
 
-main {
-    background: linear-gradient(var(--colorGradient2), var(--colorGradient3));
+main {    
     height: inherit;    
     display: flex;
     flex-direction: column;
@@ -146,10 +144,10 @@ main > div {
 }
 
 footer {
+    display: none;
     color: var(--colorPalette4);    
     height: 5rem;
-    margin-top: auto;
-    background: var(--colorGradient3);
+    margin-top: auto;    
     width: 100vw;
     font-size: 2rem;
     display: inherit;
