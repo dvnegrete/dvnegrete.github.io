@@ -90,7 +90,7 @@ let DB_briefcase = [
     },
     {
         name: "cecati13",
-        repository : "https://dvnegrete.github.io/cecati13/",
+        repository : "http://cecati13.com.mx/",
         title : "Rediseño del Sitio oficial del CECATI 13",
         skills : [skillHTML5, skillCSS3, skillJS],
         previous : {

@@ -4,13 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/portafolio.css">
 </head>
 <body>
-    <header>
-        <h2>Proyectos desarrollados.</h2>
-        <h3>Sitio en proceso de mejora...</h3>
-    </header>
+
+    <!-- Site header -->
+  <header class="header">
+    <ul class="nav-hide" id="nav">
+      <li>
+        <a href="#" class="">
+          Inicio
+        </a>
+      </li>
+      <li>
+        <a href="./portafolio.html" class="">
+          Portafolio
+        </a>
+      </li>
+      <li>
+        <a href="#" id="i-am" data-node="noDisponible">
+          Sobre mi...
+        </a>
+      </li>
+      <li>
+        <a href="#" id="skills" data-node="noDisponible">
+          Skills
+        </a>
+      </li>
+      <li>
+        <a href="#" data-node="noDisponible">
+          Contacto
+        </a>
+      </li>
+    </ul>
+    <div class="con" data-node="menu">
+      <svg id="menuShow"class="menu__mobile" data-node="menu" viewBox="0 0 46 34.5" stroke-linecap="round" stroke-width="6px">
+          <line data-node="menu" x1="3" y1="17.25" x2="43" y2="17.25"/>
+          <line data-node="menu" x1="3" y1="31.5" x2="43" y2="31.5"/>
+          <line data-node="menu" x1="3" y1="3" x2="43" y2="3"/>
+      </svg>
+      <svg id="menuClose" class="menu-hide" data-node="menu" viewBox="0 0 31.71 36.64" stroke-linecap="round" stroke-width="6px">
+        <line data-node="menu" x1="3" y1="33.64" x2="28.71" y2="3"/>
+        <line data-node="menu" x1="28.71" y1="33.64" x2="3" y2="3"/>
+      </svg>
+    </div>
+  </header>
+<!--/ Site header -->
+    <section>
+        <h2>Proyectos desarrollados.</h2>       
+    </section>
+
+    <!-- Portafolio -->
     <main class="main__portafolio">
         <section class="section">
         <a href="https://dvnegrete.github.io/clonGoogle/">
@@ -28,7 +73,7 @@
         </section>
         <section class="section">
         <a href="https://dvnegrete.github.io/WikiClone/">            
-            <h3>WikiClon. Clon de la página de inicio de Wikipedia</h3>
+            <h5>WikiClon. Clon de la página de inicio de Wikipedia</h5>
             <figure class="image__previous">
                 <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon.jpg" alt="">
                 <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon-mobile.jpg" alt="">                
@@ -43,7 +88,7 @@
         </section>
         <section class="section">
         <a href="https://dvnegrete.github.io/platzi_video/">            
-            <h3>Platzi Video. Comienzo de una aplicación web de videos</h3>
+            <h5>Platzi Video. Comienzo de una aplicación web de videos</h5>
             <figure class="image__previous">
                 <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/platzi-video-iniciarSesion.jpg" alt="">
                 <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/platziVideo.-mobile.jpg" alt="">
@@ -58,7 +103,7 @@
         </section>
         <section class="section">
         <a href="https://dvnegrete.github.io/cursoPracticoJS/">
-            <h3>Calculadoras. Proyecto de práctica de JS</h3>
+            <h5>Calculadoras. Proyecto de práctica de JS</h5>
             <figure class="image__previous">
                 <img class="image__previous--img img-reduce" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/calculadoras-moda.jpg" alt="Previo  del Sitio">
                 <!-- <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/calculadoras.jpg" alt=""> -->
@@ -74,7 +119,7 @@
         </section>
         <section class="section">
             <a href="https://dvnegrete.github.io/APIAguacates/">
-                <h3>Consulta a API externa</h3>            
+                <h5>Consulta a API externa</h5>            
                 <figure class="image__previous">
                     <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/apiAguacates-mobile.jpg" alt="API Aguacates Mobile" class="image__previous--img">
                     <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/apiAguacates-desktop.jpg" alt="API Aguacates Desktop" class="image__previous--img">
@@ -88,7 +133,7 @@
         </section>
         <section class="section">
         <a href="https://dvnegrete.github.io/StreamingComparative/">
-            <h3>Comparador de costos en Plataformas Streaming</h3>            
+            <h5>Comparador de costos en Plataformas Streaming</h5>            
             <figure class="image__previous">
                 <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/comparadorStreaming2.jpg" alt="Comparador">
                 <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/comparadorStreaming.jpg" alt="Comparador">
@@ -100,19 +145,22 @@
         </a>
         </section>
         <section class="section">
-            <a href="https://dvnegrete.github.io/cecati13/">
-                <h3>Rediseño del Sitio oficial del CECATI 13</h3>            
-                <figure class="image__previous">
-                    <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-moblie.jpg" alt="Cecati 13 para movil">
-                    <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-desktop.jpg" alt="Cecati 13 para Desktop">
-                </figure>
-                <div class="section__logos">
-                    <p>Tecnologías usadas:</p>
-                    <img class="section__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/logosFrontend.png" alt="Html CSS y JS">
-                </div>
-            </a>
-            </section>
+        <a href="http://cecati13.com.mx">
+            <h5>Rediseño del Sitio oficial del CECATI 13</h5>            
+            <figure class="image__previous">
+                <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-moblie.jpg" alt="Cecati 13 para movil">
+                <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-desktop.jpg" alt="Cecati 13 para Desktop">
+            </figure>
+            <div class="section__logos">
+                <p>Tecnologías usadas:</p>
+                <img class="section__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/logosFrontend.png" alt="Html CSS y JS">
+            </div>
+        </a>
+        </section>
     </main>
+    <!-- Portafolio -->
+
+
     <footer>
         <div>
             <p>En las actualizaciones de los proyectos, las imágenes están alojadas en AWS</p>

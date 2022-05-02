@@ -1,98 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damián V.N.</title>
-    <link rel="stylesheet" href="./css/styles.css">
-
-    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damián V.N.</title>
+  <link rel="stylesheet" href="./css/styles.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">  
 </head>
 <body>
- 
-
-<!-- Site main -->
-  <main class="main">
-    <div class="main__intro">
-      <h1>Hola, soy Damián!</h1>
-      <h2>Frontend Developer...</h2>
-      <img class="main__intro__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/engranes.gif" alt="Engranes">
-      <h2> y Full Stack en proceso... :)</h2>
-    </div>
-    <div class="main__container__redes">
-      <a href="https://twitter.com/dvnegrete">
-        <img class="main__redes__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/twitter-logo.png" alt="Twitter">
-      </a>
-      <a href="https://www.linkedin.com/in/dvnegrete/">
-        <img class="main__redes__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/linkend-logo.png" alt="linkedin">
-      </a>
-    </div>
-    <div class="portafolio" id="root">
-      <!-- <h3 class="main__portafolio">Algunos proyectos creados</h3> -->
-    </div>
-    <section class="containerTemporal">
-      <div class="temporal-image">
-        <p>Sitio en construcción...</p>
-        <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/ingeniero.png" alt="">
-        <p>...mientras tanto, algunos proyectos que he venido trabajando en la sección de <a href="./portafolio.html">portafolio</a></p>
-      </div>      
-      <div>
-        
-      </div>
-    </section>
-
-
-  </main>
-  
-
-<!--/ Site main -->
-
-  <!-- <section class="main__iam">
-    <h3>Sobre mi...</h3>
-    <div class="button-effect">
-      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
-      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
-      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
-      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
-      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
-    </div>
-  </section> -->
-
-  <!-- Site footer -->
-  <!-- <footer class="footer">
-      <div>
-        Hola, soy Damián!
-      </div>
-  </footer> -->
-  <!--/ Site footer -->
-
-   <!-- Site header -->
-   <header class="header">
+  <!-- Site header -->
+  <header class="header">
     <ul class="nav-hide" id="nav">
       <li>
-        <a href="#" class="">
-          inicio
+        <a href="#intro" class="">
+          Inicio
         </a>
       </li>
       <li>
-        <a href="./portafolio.html" class="">
-          portafolio
+        <a href="#portafolio" class="">
+          Portafolio
         </a>
       </li>
       <li>
-        <a href="#" id="i-am" data-node="noDisponible">
-          sobre mi...
+        <a href="#iam" id="i-am" data-node="noDisponible">
+          Sobre mi...
         </a>
       </li>
       <li>
-        <a href="#" id="skills" data-node="noDisponible">
-          skills
+        <a href="#nodeSkills" id="skills" data-node="noDisponible">
+          Skills
         </a>
       </li>
       <li>
-        <a href="#" data-node="noDisponible">
-          contacto
+        <a href="#nodecontact" data-node="noDisponible">
+          Contacto
         </a>
       </li>
     </ul>
@@ -109,7 +50,249 @@
     </div>
   </header>
 <!--/ Site header -->
+ 
+
+<!-- Site Intro -->
+  <div id="intro" class="sections--titles">
+    <h3> </h3>
+  </div>
+  <section class="sectionHome">
+    <div class="sectionHome__intro">
+      <h1>Damián Valenzuela Negrete</h1>      
+      <img class="sectionHome__intro__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/webDvnegrete.png" alt="Engranes">
+      <h2>Full Stack Developer siempre en progreso...</h2>
+    </div>
+    <div class="sectionHome__container__redes">
+      <a href="https://github.com/dvnegrete">
+        <img class="sectionHome__redes__img" src="https://logodix.com/logo/64439.png" alt="github">
+      </a>
+      <a href="https://www.linkedin.com/in/dvnegrete/">
+        <img class="sectionHome__redes__img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/linkend-logo.png" alt="linkedin">
+      </a>
+    </div>
+  </section>
+<!-- Site Intro -->
+
+<!-- Portafolio -->
+  <div id="portafolio" class="sections--titles">
+    <h3>Portafolio</h3>
+  </div>
+  <main class="container__main">
+    <div class="containerProject">
+    <a href="https://dvnegrete.github.io/clonGoogle/">
+        <h5>Clon de página de inicio de Google</h5>
+        <figure class="image__previous">
+          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/googleClon-mobile.jpg" alt="Google Clon Mobile">
+          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/googleClon-desktop.jpg" alt="Google Clon Desktop">
+        </figure>
+        <div class="section__logos">
+            <p>Tecnologías usadas:</p>
+            <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/html5.png" alt="HMTL5">
+            <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/css3.png" alt="CSS3">
+        </div>            
+    </a>
+    </div>
+    <div class="containerProject">
+    <a href="https://dvnegrete.github.io/WikiClone/">            
+        <h5>WikiClon. Clon de la página de inicio de Wikipedia</h5>
+        <figure class="image__previous">
+            <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon.jpg" alt="">
+            <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon-mobile.jpg" alt="">                
+        </figure>
+        <div class="section__logos">
+            <p>Tecnologías usadas:</p>
+            <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/html5.png" alt="HMTL5">
+            <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/css3.png" alt="CSS3">
+            <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/aws-logo.png" alt="Contenedor AWS">
+        </div>            
+    </a>
+    </div>
+    <div class="containerProject">
+    <a href="https://dvnegrete.github.io/platzi_video/">            
+      <h5>Platzi Video. Comienzo de una aplicación web de videos</h5>
+      <figure class="image__previous">
+        <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/platzi-video-iniciarSesion.jpg" alt="">
+        <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/platziVideo.-mobile.jpg" alt="">
+        <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/platziVideo.jpg" alt="">               
+      </figure>
+      <div class="section__logos">
+        <p>Tecnologías usadas:</p>
+        <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/html5.png" alt="HMTL5">
+        <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/css3.png" alt="CSS3">
+      </div>            
+    </a>
+    </div>
+    <div class="containerProject">
+    <a href="https://dvnegrete.github.io/cursoPracticoJS/">
+      <h5>Calculadoras. Proyecto de práctica de JS</h5>
+      <figure class="image__previous">
+        <img class="image__previous--img img-reduce" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/calculadoras.jpg" alt="Previo  del Sitio">
+        <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/calculadoras-tablet.jpg" alt="Previo  del Sitio">
+      </figure>
+      <div class="section__logos">
+        <p>Tecnologías usadas:</p>
+        <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/logosFrontend.png" alt="Html CSS y JS">
+      </div>            
+    </a>
+    </div>
+    <div class="containerProject">
+      <a href="https://dvnegrete.github.io/APIAguacates/">
+        <h5>Consulta a API externa</h5>            
+        <figure class="image__previous">
+          <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/apiAguacates-mobile.jpg" alt="API Aguacates Mobile" class="image__previous--img">
+          <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/apiAguacates-desktop.jpg" alt="API Aguacates Desktop" class="image__previous--img">
+        </figure>
+        <div class="section__logos">
+          <p>Tecnologías usadas:</p>             
+          <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/javascript.png" alt="Javascript">
+          <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/boostrap.png" alt="Bootstrap">
+        </div>
+      </a>
+    </div>
+    <div class="containerProject">
+    <a href="https://dvnegrete.github.io/StreamingComparative/">
+        <h5>Comparador de costos en Plataformas Streaming</h5>            
+        <figure class="image__previous">
+            <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/comparadorStreaming2.jpg" alt="Comparador">
+            <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/comparadorStreaming.jpg" alt="Comparador">
+        </figure>
+        <div class="section__logos">
+            <p>Tecnologías usadas:</p>
+            <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/logosFrontend.png" alt="Html CSS y JS">
+        </div>
+    </a>
+    </div>
+    <div class="containerProject">
+      <a href="http://cecati13.com.mx">
+        <h5>Sitio web del CECATI 13</h5>            
+        <figure class="image__previous">
+          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-moblie.jpg" alt="Cecati 13 para movil">
+          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-desktop.jpg" alt="Cecati 13 para Desktop">
+        </figure>
+        <div class="section__logos">
+          <p>Tecnologías usadas:</p>
+          <img class="containerProject__logos--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/logosFrontend.png" alt="Html CSS y JS">
+          <img class="containerProject__logos--img" src="https://logodownload.org/wp-content/uploads/2021/06/google-cloud-logo-5.png" alt="Google Cloud Plataform">
+          <img class="containerProject__logos--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png" alt="Microsoft Azure">
+          <img class="containerProject__logos--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png" alt="NodeJS">
+          
+        </div>
+      </a>
+    </div>
+    <div class="containerProject">
+      <a href="https://dvnegrete.github.io/todoTask/">
+        <h5>Lista tareas personales</h5>            
+        <figure class="image__previous">
+          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/ToDo+Task-mobile.jpg" alt="Todo Task Mobile">
+          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/ToDo+Task-mobile2.jpg" alt="Todo Task">
+        </figure>
+        <div class="section__logos">
+          <p>Tecnologías usadas:</p>
+          <img class="containerProject__logos--img" src="https://betabeers.com/static/uploads/blog/20170420_React_logo_wordmark.png" alt="React">
+        </div>
+    </a>
+    </div>
+</main>
+<!-- Portafolio -->
+
+<!-- Sobre mi...-->
+  <div id="iam" class="sections--titles">
+    <h3>Sobre mi...</h3>
+  </div>
+  <section class="section__iam">
+    <figure class="section__iam--image">
+      <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/PerfilMobile.jpg" alt="">
+    </figure>
+    <div class="section__iam__container">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi autem sapiente odit nesciunt, ratione fugit ab voluptatibus quos asperiores esse incidunt accusamus aut! Ex aspernatur dolore autem numquam minus distinctio!</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam est doloremque ipsa fuga quidem maiores autem dolorem fugiat corrupti architecto repudiandae, illum beatae officiis. Veritatis cum aliquam provident dolore officiis!</p>
+    </div>
+    <!-- <div class="button-effect">
+      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+      <a class="effect effect-5" href="#" title="Learn More">Learn More</a>
+    </div> -->
+  </section>
+<!-- Sobre mi...-->
+
+  <!-- Skills -->
+  <div id="nodeSkills" class="sections--titles">
+    <h3>Skills</h3>
+  </div>
+  <section class="section__skills">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugiat mollitia aut illum natus ab sequi ratione dolore doloribus autem possimus sit odio nam dolorem a, voluptas porro aliquid. Maiores!</p>      
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem cum explicabo consectetur officia aut, tempore beatae quo eaque voluptatibus consequatur, nisi soluta dolore laborum alias minima temporibus fugiat illum.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi asperiores, rerum praesentium nostrum quasi fugiat itaque! Pariatur fugit perferendis hic voluptatem exercitationem eligendi provident? Iste labore nobis placeat nihil animi.</p>
+  </section>
+  <!-- Skills -->
+  
+  <!-- Contacto -->
+  <div class="sections--titles" id="nodecontact">
+    <h3>Contacto</h3>
+  </div>
+  <section class="contact_form">
+    <div class="form">      
+      <h4>Deja un mensaje para contactarme</h4>
+      <form action="" method="post">        
+        <p>
+          <label for="name">Nombre
+            <span class="required">*</span>
+          </label>
+          <input type="text" name="name" required placeholder="Escribe tu nombre">
+        </p>
+        
+        <p>
+          <label for="email"">Email
+            <span class="required">*</span>
+          </label>
+          <input type="email" name="email" required placeholder="Escribe tu Email">
+        </p>
+        
+        <p>
+          <label for="telefone">Teléfono
+          </label>
+          <input type="tel" name="telefone" placeholder="Escribe tu teléfono">
+        </p>
+        
+        <p>
+          <label for="business">Asunto
+            <span class="required">*</span>
+          </label>
+          <input type="text" name="business" required placeholder="Escribe un asunto">
+        </p>    
+      
+        <p>
+          <label for="message">Mensaje
+            <span class="required">*</span>
+          </label>
+          <textarea name="message" class="texto_mensaje"required placeholder="Deja aquí tu comentario..."></textarea> 
+        </p>                    
+      
+        <button type="submit" name="sendForm" id="buttonForm" data-node="noDisponible">
+          Enviar
+        </button>
+
+        <p class="warning">
+          <span class="required"> * </span>los campos son obligatorios.
+        </p>          
+        
+      </form>
+  </div>
+</section>
+<!-- Contacto -->
+
+
+  <!-- Site footer -->
+  <!-- <footer class="footer">
+      
+  </footer> -->
+  <!--/ Site footer -->
+  
+  
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <script src="./main.js"></script>  
+  <script src="./main.js"></script>
+  <script src="./src/index.js" ></script>
 </body>
 </html>
