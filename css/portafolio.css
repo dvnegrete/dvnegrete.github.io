@@ -107,8 +107,7 @@ body {
     display: none;
   }
 
-main {
-    background: var(--background);
+main {    
     height: inherit;    
     display: flex;
     flex-direction: column;
@@ -174,6 +173,7 @@ main > div {
 }
 
 .image__previous--img {
+    border-radius: 7px;
     height: 100px;
 }
 
