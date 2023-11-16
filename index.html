@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Damián V.N.</title>
-  <link rel="stylesheet" href="./css/styles.css"> 
+  <link rel="stylesheet" href="./css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">  
 </head>
 <body>
+  <script type="module">
+    import { CONSTANTS_SKILLS } from './Skills/arraySkills.js';
+    const nodeUL = document.createElement('ul');
+    CONSTANTS_SKILLS.forEach( element => {
+      const li = document.createElement('li');
+      li.textContent = element;
+      nodeUL.appendChild(li);
+    });
+    const container = document.querySelector('.section__skills');
+    container.appendChild(nodeUL);
+</script>
   <!-- Site header -->
   <header class="header">
     <ul class="nav-hide" id="nav">
@@ -27,7 +38,7 @@
         </a>
       </li>
       <li>
-        <a href="#nodeSkills" id="skills" data-node="noDisponible">
+        <a href="#nodeSkills" id="skills">
           Skills
         </a>
       </li>
@@ -196,10 +207,10 @@
       <a href="http://cecati196.edu.mx">
         <h5>Sitio web del CECATI 196</h5>
         <figure class="image__previous">
-          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati196-mobile.png" alt="Cecati 196 mobile">
-          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati196-mobile-dark.png" alt="Cecati 196 mobile. DARK mode">
-          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati196-web.png" alt="Cecati 196 para Desktop">
-          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati196-web-dark.png" alt="Cecati 196 para Desktop. DARK mode">
+          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/cecati196-mobile.png" alt="Cecati 196 mobile">
+          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/cecati196-web.png" alt="Cecati 196 para Desktop">
+          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/cecati196-mobile-dark.png" alt="Cecati 196 mobile. DARK mode">
+          <img class="image__previous--img" src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/cecati196-web-dark.png" alt="Cecati 196 para Desktop. DARK mode">
         </figure>
         <div class="section__logos">
           <p>Tecnologías usadas:</p>
@@ -239,9 +250,6 @@
     <h3>Skills</h3>
   </div>
   <section class="section__skills">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugiat mollitia aut illum natus ab sequi ratione dolore doloribus autem possimus sit odio nam dolorem a, voluptas porro aliquid. Maiores!</p>      
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem cum explicabo consectetur officia aut, tempore beatae quo eaque voluptatibus consequatur, nisi soluta dolore laborum alias minima temporibus fugiat illum.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi asperiores, rerum praesentium nostrum quasi fugiat itaque! Pariatur fugit perferendis hic voluptatem exercitationem eligendi provident? Iste labore nobis placeat nihil animi.</p>
   </section>
   <!-- Skills -->
   

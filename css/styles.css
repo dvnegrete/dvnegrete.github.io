@@ -354,7 +354,14 @@ body {
   background-attachment: fixed;
 }
 
-.section__skills p {
+.section__skills ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section__skills li {
+  list-style: none;
+  font-size: 2rem;
   padding: 25px;
   margin: 15px 0;
 }
