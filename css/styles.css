@@ -357,6 +357,7 @@ body {
 .section__skills ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .section__skills li {
