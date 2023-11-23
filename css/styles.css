@@ -265,11 +265,12 @@ body {
   display: inline-block;
   margin-top: 2rem;
   padding: 20px;
+  text-align: center;
 }
 
-/* .logos {
-  width: 6rem;
-} */
+.section__logos figure {
+  padding: 10px 0;
+}
 
 .containerProject {    
   width: 42rem;
@@ -294,7 +295,7 @@ body {
 
 .containerProject__logos--img {
   width: 60px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .containerProject__logos--img:hover {
@@ -322,12 +323,15 @@ body {
 /* Sobre mi... */
 .section__iam {  
   color: var(--textColor1);
-  font-size: 1.6rem;
+  font-size: 1.9rem;
+  font-family: monospace;
   background: url(https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/unsplash01.jpg);
   background-size: 100vh;
   background-attachment: fixed;
   display: flex;
   justify-content: space-between;
+  line-height: 1.2;
+  word-spacing: 0.2em;
 }
 
 .section__iam--image {
@@ -340,14 +344,14 @@ body {
 }
 
 .section__iam__container p {
-  padding: 20px;
+  padding: 10px;
 }
 
 /* Sobre mi... */
 
 /* Skills */
 .section__skills {
-  color: var(--textColor1);
+  color: var(--mainColor1);
   font-size: 1.6rem;
   background: url(https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/unsplash_03.jpg);
   background-size: 100vw;
