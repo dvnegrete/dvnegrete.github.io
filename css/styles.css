@@ -7,7 +7,17 @@
   --secondaryColor1: #D76325;
   --secondaryColor2: #FBD104;
   --secondaryColor3: #0586FC;
-  --secondaryColor4: #D405D0;  
+  --secondaryColor4: #D405D0;
+
+  /* Styles for Calendar double */
+  --primary-color: #ffffff;
+  --secondary-color: #00bb91;
+  --tertiary-color: #000000;
+  --inactive-color: #00bb9163;
+  --backgroud-color: #2a224a;
+  --border-color: #7471a799;
+  --font-color: #10ff83;
+  --font-light: 'InterStateL', sans-serif;
 }
 
 * {
@@ -316,6 +326,11 @@ body {
 
 .image__previous--img:hover {
   transform: scale(2);
+}
+
+calendar-input-selection {
+  padding: 25px;
+  width: 250px;
 }
 /* Estilos Portafolio */
 

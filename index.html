@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Damián V.N.</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet"> 
+
+  <script type="module">
+    import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/dvn-calendar-double@1.0.3/loader/index.es2017.js';
+    defineCustomElements();
+  </script>
+  
 </head>
 <body>
   <script type="module">
@@ -269,6 +275,17 @@
           <figcaption>NodeJS. Framework ExpressJS</figcaption>
         </figure>
       </div>
+    </div>
+    <div class="containerProject">
+      <h5>Proyecto de Web Component: Calendario Doble </h5>      
+      <div class="section__logos">
+        <p>Tecnologías usadas:</p>
+        <figure>
+          <img class="containerProject__logos--img" src="https://seeklogo.com/images/S/stencil-logo-2361B95AA4-seeklogo.com.png" alt="Stencil">
+          <figcaption>StencilJS</figcaption>
+        </figure>
+      </div>
+      <calendar-input-selection></calendar-input-selection>
     </div>
 </main>
 <!-- Portafolio -->

@@ -1,0 +1,17 @@
+{
+  "entries": [
+    "components/calendar-double/calendar-double.js",
+    "components/calendar-input-selection/calendar-input-selection.js",
+    "components/calendar-single/calendar-single.js",
+    "components/double-calendar-container/double-calendar-container.js",
+    "components/header-calendar/header-calendar.js",
+    "components/my-component/my-component.js"
+  ],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "4.7.2",
+    "typescriptVersion": "5.2.2"
+  },
+  "collections": [],
+  "bundles": []
+}

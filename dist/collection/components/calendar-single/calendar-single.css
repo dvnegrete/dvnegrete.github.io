@@ -1,0 +1,121 @@
+:host {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  padding: 7% 2%;
+  font-size: 0.9rem;
+}
+
+.container-calendar {
+  min-width: 170px;
+}
+
+.day-names {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  margin: 3% 0;
+  font-size: 0.75rem;
+}
+
+.day-names span{
+  padding: 0 3px;
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.days-in-month {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
+  margin: 0;
+  color: var(--inactive-color, rgb(179,179,179));
+  background-color: transparent;
+}
+
+.days-in-month li {
+  margin: 3px 0;
+  padding: 3px 0;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.days-in-month li:nth-child(7n + 1){
+  border-radius: 25px 0 0 25px;
+}
+
+.days-in-month li:nth-child(7n + 7){
+  border-radius: 0 25px 25px 0;
+}
+
+.days-in-month li.disabled {
+  color: transparent;
+  letter-spacing: -0.8px;
+  cursor: default;
+  font-weight: normal;
+  margin: 3px 0;
+  padding: 1px 0;
+}
+
+.days-in-month .selected {
+  background-color: var(--secondary-color, #0075c0);
+  color: var(--backgroud-color, rgb(255, 255, 255));
+}
+
+li.selected:nth-child(7n + 1),
+li.selected:nth-child(7n + 7){
+  border-radius: 50%;
+}
+
+.in-range {
+  color: var(--font-color, rgb(50, 50, 50));
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.is-now {
+  border: solid 1px var(--secondary-color, #0075c0);
+  width: 21px;
+  border-radius: 50%;
+}
+
+.days-in-month .inside-the-range {
+  background-color: var(--tertiary-color, #def6ff);
+  border-radius: 0px;
+  color: var(--secondary-color, #0075c0);
+}
+
+li.is-now:nth-child(7n + 1),
+li.is-now:nth-child(7n + 7){
+  border-radius: 25px;
+}
+
+@media (min-width: 321px) and (max-width: 520px) {
+  :host{
+    padding: 2% 0;
+  }
+}
+
+@media (min-width: 150px) and (max-width: 320px) {
+  :host{
+    padding: 2% 0;
+    font-size: 0.7rem;
+  }
+
+  .container-calendar {
+    min-width: 125px;
+  }
+
+  .day-names {
+   font-size: 0.65rem;
+  }
+  
+  .days-in-month li {   
+    font-size: 0.65rem;
+  }
+
+}

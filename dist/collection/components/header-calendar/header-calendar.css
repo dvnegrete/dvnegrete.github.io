@@ -1,0 +1,43 @@
+:host {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 0;
+}
+
+span {
+  min-width: fit-content;
+}
+
+.button-next {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-next img {
+  height: 15px;
+  padding: 0 3px;
+}
+
+.empty {
+  width: 18px;
+}
+
+.inactive {
+  color: var(--inactive-color, rgb(179,179,179));
+}
+
+.hidden {
+  width: 15px;
+}
+
+.hidden  img {
+  display: none;
+}

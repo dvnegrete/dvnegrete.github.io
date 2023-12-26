@@ -1,0 +1,32 @@
+import { EventEmitter } from '../../stencil-public-runtime';
+import { CalendarEntry } from '../../utils/interfaces/calendarEntry';
+export declare class DoubleCalendarContainer {
+  showDate: EventEmitter<Array<Date | string>>;
+  closeDoubleCalendar: EventEmitter<boolean>;
+  changeCleanPeriod: EventEmitter<any>;
+  cleanCalendarSelection: EventEmitter<any>;
+  el: HTMLElement;
+  private numberOfPeriods;
+  private monthNames;
+  assignDate: Date;
+  dateForPeriods: Date;
+  arrayPeriods: CalendarEntry[];
+  countDaysSelected: number;
+  buttonContinue: boolean;
+  typeSelection: 'oneDay' | 'range' | 'period';
+  applicationDate(event: CustomEvent): void;
+  handlerRangeDate(event: CustomEvent): void;
+  handlerCalendarDobleSetDate(event: CustomEvent): void;
+  handlerChangeMonthCalendar(): void;
+  private convertCalendarEntryOnDate;
+  private countSelectedDays;
+  private calculateLastDayOfMonth;
+  private handlerForTypeSelection;
+  private cleanPeriodsPreview;
+  private markPeriodInLabel;
+  private buildPeriods;
+  private changePeriod;
+  private goToToday;
+  private renderForm;
+  render(): any;
+}

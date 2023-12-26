@@ -1,0 +1,1 @@
+{"version":3,"file":"calendarEntry.js","sourceRoot":"","sources":["../../../src/utils/interfaces/calendarEntry.ts"],"names":[],"mappings":"","sourcesContent":["export interface CalendarEntry {\n    day?: number;\n    month: number;\n    year: number;\n}"]}
