@@ -1,0 +1,17 @@
+.image__previous {
+    height: 120px;
+    padding: 10px 0;
+}
+
+.image__previous--img {
+    height: 100px;
+    padding: 2px;
+}
+
+.img-reduce{
+    height: 50px;
+}
+
+.image__previous--img:hover {
+    transform: scale(2);
+}

@@ -1,0 +1,36 @@
+.containerProject {    
+    max-width: 500px;
+    padding: 3rem;
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerProject a {
+    color: var(--textColor1);
+    text-decoration: none;
+    text-align: center;
+}
+
+.containerProject a:visited {
+    color: var(--textColor1);
+    text-decoration: underline;
+}
+
+.containerProject h5 {
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
+
+.tecnologys__class {
+    background: var(--secondaryColor3);
+    border-radius: 15px;
+    color: var(--textColor1);
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 20px;
+    text-align: center;
+    width: max-content;
+}

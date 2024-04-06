@@ -1,0 +1,12 @@
+.tecnology {
+  width: 60px;
+  padding: 5px;
+}
+
+.tecnology:hover {
+  transform: scale(1.9);
+}
+
+.tec-figure {
+  padding: 10px 0;
+}

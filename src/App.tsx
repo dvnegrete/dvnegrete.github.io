@@ -1,9 +1,5 @@
-import { HeaderComponent } from './components/Header'
-import { Contact } from './Pages/Contact'
-import { Home } from './Pages/Home'
-import { Iam } from './Pages/Iam'
-import { Portfolio } from './Pages/Portfolio/Portfolio'
-import { Skills } from './Pages/Skills'
+import { HeaderComponent } from './components'
+import { Contact, Home, Iam, Portfolio, Skills } from './Pages'
 
 function App() {
 
@@ -11,11 +7,11 @@ function App() {
     <>
       <HeaderComponent></HeaderComponent>
       <main>
-         {/* <Home/> */}
-        {/*<Portfolio/>*/}
+        <Home/>
+        <Portfolio/>
         <Iam/>
         <Skills/>
-        <Contact/> 
+        <Contact/>
       </main>
     </>
   )
