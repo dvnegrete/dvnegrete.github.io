@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Homenaje', sans-serif;
+}
+
+:root {
+  --background: #1F1D1D;
+  --textColor1: #FFFFFF;
+  --textColor2: #B1D2F4;
+  --mainColor1: #00DBE4;
+  --mainColor2: #522EE6;
+  --secondaryColor1: #D76325;
+  --secondaryColor2: #FBD104;
+  --secondaryColor3: #0586FC;
+  --secondaryColor4: #D405D0;
+
+  font-family: 'Homenaje', sans-serif;
+  /* line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+main {
+  background-color: var(--background);
+  margin-top: 75px;
+  height: calc(100vh - 75px);
+  width: 100vw;
+}
+
+@media (min-width: 721px ) and (max-width: 980px) {
+  main {
+    margin-top: 157px;
+    height: calc(100vh - 157px);
+  }
+}
+
+@media (min-width: 981px ) {
+  main {
+    margin-top: 116px;
+    height: calc(100vh - 116px);
+  }
+}

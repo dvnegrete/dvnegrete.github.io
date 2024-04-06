@@ -1,0 +1,29 @@
+.section__Iam {
+    color: var(--textColor1);
+    font-size: 1.9rem;
+    font-family: monospace;
+    background: url(https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/unsplash01.jpg);
+    background-size: 100vh;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    justify-content: space-between;
+    line-height: 1.2;
+    word-spacing: 0.2em;
+    width: 100vw;
+}
+
+.section__Iam img {
+    border-radius: 7em;
+    height: 150px;
+}
+
+.container__Iam {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.container__Iam p {
+    padding: 10px;
+}

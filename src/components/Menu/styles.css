@@ -1,0 +1,20 @@
+div {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    stroke: var(--secondaryColor4);
+    height: 40px;
+    z-index: 4;
+    display: block;
+    cursor: pointer;
+    margin: 15px 15px 0 0;
+}
+
+@media (min-width: 720px) {
+    .menu {
+        display: none;
+    }
+}
