@@ -1,5 +1,4 @@
-import { ImageURLInterface } from "./ImageURL.interface";
-import { TecnologyPropInterface } from "./TecnologyProp.interface";
+import { ImageURLInterface, TecnologyPropInterface } from "./";
 
 export interface ProjectPropInterface {
     nameProject: string;

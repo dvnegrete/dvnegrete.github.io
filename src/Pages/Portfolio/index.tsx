@@ -1,7 +1,17 @@
 import { Project } from "../../components"
+import { PortfolioData } from "../../shared/CONSTANTS"
 
 export const Portfolio = ()=> {
     return (
-        <Project/>
+        <section className="section__Portfolio">
+        { PortfolioData.map( project =>(
+            <Project 
+            nameProject={ project.nameProject }
+            projectURL={ project.projectURL }
+            tecs={ project }
+            arrayImgUrls={ project.imagePreviousProject }
+            />
+        ))}
+        </section>
     )
 }
