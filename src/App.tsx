@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <HeaderComponent></HeaderComponent>
+      <HeaderComponent/>
       <main>
         <Home/>
         <Portfolio/>

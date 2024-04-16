@@ -1,5 +1,6 @@
-import { Project } from "../../components"
-import { PortfolioData } from "../../shared/CONSTANTS"
+import { Project } from "../../components";
+import { PortfolioData } from "../../shared/CONSTANTS";
+import "./style.css";
 
 export const Portfolio = ()=> {
     return (
