@@ -4,9 +4,13 @@
 }
 
 .tecnology:hover {
-  transform: scale(1.9);
+  transform: scale(1.5);
 }
 
 .tec-figure {
   padding: 10px 0;
+}
+
+.tec-figure figcaption {
+  margin-top: 4px;
 }

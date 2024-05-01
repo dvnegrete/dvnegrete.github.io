@@ -4,17 +4,32 @@ import { ProjectPropInterface } from '../../shared/Interfaces';
 import { PreviousImage, TecnologyDescription } from "../";
 
 
-export const Project = ({ projectURL, nameProject, arrayImgUrls, tecs }:ProjectPropInterface)=> {
-    console.log(nameProject)
+export const Project = ({ projectURL, webURL, nameProject, description, arrayImgUrls, tecs }: ProjectPropInterface) => {
     return (
         <div className="containerProject">
-            <a href= { projectURL }>
-                <h5>{ nameProject }</h5>
-                <PreviousImage arrayUrl={ arrayImgUrls.arrayUrl } />
-            </a>
+            <div className='containerProject__name'>
+                <h5>{nameProject}</h5>
+                {
+                    arrayImgUrls.arrayUrl.length > 0 ?
+                        <PreviousImage arrayUrl={arrayImgUrls.arrayUrl} />
+                        : <></>
+                }
+            </div>
+
+            <p className='containerProject__description'>{description}</p>
             <div className="tecnologys__class">
                 <p>Tecnologías usadas:</p>
-                <TecnologyDescription tecnologys={ tecs.tecnologys }/>
+                <div>
+                    <TecnologyDescription tecnologys={tecs.tecnologys} />
+                </div>
+            </div>
+            <div className='containerProject__buttons'>
+                <a href={projectURL} target='_blank'>Ver Codigo</a>
+                {
+                    webURL === undefined || webURL === "" ?
+                        <></> :
+                        <a href={webURL} target='_blank'>Ver sitio web</a>
+                }
             </div>
         </div>
     )

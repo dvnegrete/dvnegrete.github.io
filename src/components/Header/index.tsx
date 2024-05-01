@@ -4,18 +4,18 @@ import { Navbar } from "../Navbar"
 
 import './styles.css';
 
-export const HeaderComponent = ()=> {
+export const HeaderComponent = () => {
 
-    const [ valueModal, setValueModal ] = useState(true);
+    const [valueModal, setValueModal] = useState(true);
 
-    const toogleModal = ()=>{
+    const toogleModal = () => {
         setValueModal(!valueModal);
     }
 
     return (
         <header>
-            <Menu changeModal={ valueModal } toogleModal={toogleModal} />
-            <Navbar hidden={ valueModal }/>
+            <Menu changeModal={valueModal} toogleModal={toogleModal} />
+            <Navbar hidden={valueModal} />
         </header>
     )
 }

@@ -5,13 +5,13 @@ function App() {
 
   return (
     <>
-      <HeaderComponent/>
+      <HeaderComponent />
       <main>
-        <Home/>
-        <Portfolio/>
-        <Iam/>
-        <Skills/>
-        <Contact/>
+        <Home />
+        <Portfolio />
+        <Iam />
+        <Skills />
+        <Contact />
       </main>
     </>
   )
