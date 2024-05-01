@@ -1,42 +1,38 @@
+import { TECNOLOGYS } from '../../shared/CONSTANTS'
 import './styles.css'
 
 const CONSTANTS_SKILLS = [
-    'HTML5',
-    'CSS3',
-    'JavaScript (ECMAScript 6+)',
-    'Typescript',
-    'VueJS',
-    'ReactJS',
-    'Angular',
-    'AngularJS',
-    'StencilJS',
-    'Mongo DB',
-    'Firebase',
     'MySQL',
     'Git',
     'GitHub',
     'BItbucket',
-    'NodeJS', 
-    'ExpressJS', 
+    'ExpressJS',
     'JWT',
-    'Cloud Computing: AWS, GCP, Azure',
-    'App Engine GCP',
-    'App Service Azure',
-    'Cloud Functions',
-    'Azure Blob Storage',
-    'Cloud Storage',
-    'S3 de AWS',
     'Railway',
     'JIRA',
     'Confluence',
-]
+];
 
-export const Skills = ()=> {
+export const Skills = () => {
     return (
         <section className='section__skills'>
+            <ul className='skills__img'>
+                {
+                    Object.values(TECNOLOGYS).map(tecnology => (
+                        <li>
+                            <img src={tecnology.url} />
+                            <p>{tecnology.name}</p>
+                        </li>
+                    ))
+                }
+            </ul>
             <ul>
                 {
-                    CONSTANTS_SKILLS.map( skill => ( <li>{ skill }</li> ))
+                    CONSTANTS_SKILLS.map(skill => (
+                        <li>
+                            <p>{skill}</p>
+                        </li>
+                    ))
                 }
             </ul>
         </section>

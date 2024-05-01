@@ -1,5 +1,5 @@
 .section__skills {
-    color: var(--mainColor1);
+    color: var(--textColor1);
     font-size: 1.6rem;
     background: url(https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/unsplash_03.jpg);
     background-size: 100vw;
@@ -9,7 +9,7 @@
 .section__skills ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .section__skills li {
@@ -17,4 +17,17 @@
     font-size: 2rem;
     padding: 25px;
     margin: 15px 0;
+    align-content: flex-end;
+    text-align: center;
+}
+
+.section__skills p {
+    background: var(--mainColor2);
+    border-radius: 5em;
+    padding: 4px;
+}
+
+.skills__img li img{
+    width: 120px;
+    padding: 5px;
 }

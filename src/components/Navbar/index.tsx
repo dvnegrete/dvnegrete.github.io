@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
 import './styles.css';
+import { Link } from 'react-router-dom';
 
-export const Navbar = ( { hidden }:{hidden: boolean} )=> {
+export const Navbar = ({ hidden }: { hidden: boolean }) => {
 
-    const showNav = ()=> {
+    const showNav = () => {
         const breakpoint = "720px";
         const mediaquery = window.matchMedia(`(min-width: ${breakpoint})`);
         return mediaquery.matches ? false : hidden;
     }
-    
+
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
@@ -26,34 +27,34 @@ export const Navbar = ( { hidden }:{hidden: boolean} )=> {
             showNav();
         }
     }, [windowWidth]);
-    
+
     return (
         <nav>
-            <ul className={ showNav() ? "nav__hide" : "nav" }>
+            <ul className={showNav() ? "nav__hide" : "nav"}>
                 <li>
-                    <a >
-                    Inicio
-                    </a>
+                    <Link to="/">
+                        Inicio
+                    </Link>
                 </li>
                 <li>
-                    <a >
-                    Portafolio
-                    </a>
+                    <Link to="/portafolio">
+                        Portafolio
+                    </Link>
                 </li>
                 <li>
-                    <a id="i-am">
-                    Sobre mi...
-                    </a>
+                    <Link to="/sobre-mi">
+                        Sobre mi...
+                    </Link>
                 </li>
                 <li>
-                    <a id="skills">
-                    Skills
-                    </a>
+                    <Link to="/skills">
+                        Skills
+                    </Link>
                 </li>
                 <li>
-                    <a data-node="noDisponible">
-                    Contacto
-                    </a>
+                    <Link to="/contacto">
+                        Contacto
+                    </Link>
                 </li>
             </ul>
         </nav>

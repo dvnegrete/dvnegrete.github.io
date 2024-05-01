@@ -1,19 +1,16 @@
+import { BrowserRouter } from 'react-router-dom'
 import { HeaderComponent } from './components'
-import { Contact, Home, Iam, Portfolio, Skills } from './Pages'
+import { AppRoute } from './router/AppRoute'
 
 function App() {
 
   return (
-    <>
+    <BrowserRouter>
       <HeaderComponent />
       <main>
-        <Home />
-        <Portfolio />
-        <Iam />
-        <Skills />
-        <Contact />
+        <AppRoute />
       </main>
-    </>
+    </BrowserRouter>
   )
 }
 

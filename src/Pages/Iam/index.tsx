@@ -4,7 +4,7 @@ export const Iam = ()=> {
     return (
         <section className='section__Iam'>
             <figure>
-                <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/PerfilMobile.jpg" alt=""/>
+                <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/dev-me.jpg" alt=""/>
             </figure>
             <div className="container__Iam">
                 <p>Comencé en abril de 2021 a desarrollar proyectos personales de práctica (Wikiclone, Calculadoras, Platzi Video, Comparador de Streaming, etc.) en paralelo al sitio web del CECATI 13, donde desarrollé principalmente mi habilidad con Javascript. El sitio web cecati13.edu.mx lo desarrolle en solitario. La primera parte de este proyecto consistió en mostrar los cursos disponibles, lo cual se hace conectado a una API creada con ExpressJS (NodeJS), y desplegado en APP Engine de GCP. También sirve la información de anuncios, y la galería de imágenes.</p>
