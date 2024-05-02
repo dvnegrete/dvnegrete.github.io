@@ -6,7 +6,11 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Homenaje', sans-serif;
+  font-family: 'Homenaje', sans-serif;  
+}
+
+#root {
+  display: flex;
 }
 
 :root {
@@ -31,7 +35,7 @@ html {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  -moz-osx-font-smoothing: grayscale; */  
 }
 
 main {
@@ -41,14 +45,14 @@ main {
   width: 100vw;
 }
 
-@media (min-width: 721px ) and (max-width: 980px) {
+@media (min-width: 721px) and (max-width: 980px) {
   main {
     margin-top: 157px;
     height: calc(100vh - 157px);
   }
 }
 
-@media (min-width: 981px ) {
+@media (min-width: 981px) {
   main {
     margin-top: 116px;
     height: calc(100vh - 116px);

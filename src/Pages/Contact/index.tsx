@@ -1,31 +1,78 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import './styles.css'
+import { conexionAPI } from '../../service/conexionAPI';
+import { Loader } from '../../components/Loader';
 
 export const Contact = () => {
-
+    const navigate = useNavigate();
     const nameRef = useRef<HTMLInputElement>(null);
     const emailRef = useRef<HTMLInputElement>(null);
     const phoneRef = useRef<HTMLInputElement>(null);
     const businessRef = useRef<HTMLInputElement>(null);
     const messageRef = useRef<HTMLTextAreaElement>(null);
 
-    const sendData = () => {
-        const obj = {
-            name: nameRef.current ? nameRef.current.value : null,
-            email: emailRef.current ? emailRef.current.value : null,
-            phone: phoneRef.current ? phoneRef.current.value : null,
-            business: businessRef.current ? businessRef.current.value : null,
-            message: messageRef.current ? messageRef.current.value : null,
+    const [skeleton, setSkeleton] = useState(false);
+
+    const sendData = async () => {
+        if (isFormCompleted()) {
+            setSkeleton(true);
+            const formContact = {
+                name: nameRef.current ? nameRef.current.value : null,
+                email: emailRef.current ? emailRef.current.value : null,
+                phone: phoneRef.current ? phoneRef.current.value : null,
+                business: businessRef.current ? businessRef.current.value : null,
+                message: messageRef.current ? messageRef.current.value : null,
+            }
+            const res = await conexionAPI(formContact);
+            if (res.msg) {
+                Swal.fire({
+                    title: 'Enviado',
+                    text: 'La información ha sido recibida.',
+                    icon: 'success'
+                });
+                resetForm();
+                setSkeleton(false);
+                navigate("/");
+            } else {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Problemas con el envío del mensaje. Por favor intenta mas tarde.',
+                    icon: 'error'
+                });
+            }
+        } else {
+            Swal.fire({
+                title: 'Atención',
+                text: 'Algunos datos no han sido completados. Por favor revisa nuevamente.',
+                icon: 'warning'
+            });
         }
-        //Conectar y enviar al backend
-        console.log(obj);
+    }
+
+    const isFormCompleted = () => {
+        return (nameRef.current ? nameRef.current.value !== "" : false)
+            && (emailRef.current ? emailRef.current.value !== "" : false)
+            && (businessRef.current ? businessRef.current.value !== "" : false)
+            && (messageRef.current ? messageRef.current.value !== "" : false);
+    }
+
+    const resetForm = () => {
+        nameRef.current ? nameRef.current.value = "" : null;
+        emailRef.current ? emailRef.current.value = "" : null;
+        phoneRef.current ? phoneRef.current.value = "" : null;
+        businessRef.current ? businessRef.current.value = "" : null;
+        messageRef.current ? messageRef.current.value = "" : null;
     }
 
     return (
         <section className="contact_form">
             <div className="form">
                 <h4>Deja un mensaje para contactarme</h4>
-                <form action="" method="post">
+                {
+                    !skeleton ?
+                <form>
                     <p>
                         <label htmlFor="name">
                             Nombre
@@ -76,6 +123,8 @@ export const Contact = () => {
                     </p>
 
                 </form>
+                : <Loader/>
+                }
             </div>
         </section>
     )
