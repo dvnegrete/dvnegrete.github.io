@@ -27,7 +27,7 @@ export const TECNOLOGYS = {
     },
     React: {
         name: "React",
-        url: '/src/assets/react.svg'
+        url: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
     },
     Angular: {
         name: "Angular",
