@@ -10,6 +10,7 @@
 
 .form {
     display: inline-block;
+    width: auto;
 }
   
 .contact_form input {
