@@ -6,5 +6,5 @@ export interface ProjectDataInterface {
     webURL?: string;
     tecnologys: TecnologyObjInterface[];
     imagePreviousProject: ImageURLInterface;
-    description: string;
+    description: string[];
 }

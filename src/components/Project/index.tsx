@@ -10,17 +10,23 @@ export const Project = ({ projectURL, webURL, nameProject, description, arrayImg
     const typeOfWebSite = (url: string) => {
         return (
             url.includes("http") ?
-            <a
-                href={webURL}
-                target='_blank'>
-                Ver sitio web
-            </a>
-            :
-            <Link
-                to={String(webURL)}                            >
-                Ver sitio web
-            </Link>
+                <a
+                    href={webURL}
+                    target='_blank'>
+                    Ver sitio web
+                </a>
+                :
+                <Link
+                    to={String(webURL)}                            >
+                    Ver sitio web
+                </Link>
         )
+    }
+
+    const structureDescription = (description: string[]) => {
+        return description.map(paragraph => (
+            <p>{paragraph}</p>
+        ))
     }
 
     return (
@@ -34,7 +40,7 @@ export const Project = ({ projectURL, webURL, nameProject, description, arrayImg
                 }
             </div>
 
-            <p className='containerProject__description'>{description}</p>
+            <div className='containerProject__description'>{structureDescription(description)}</div>
             <div className="tecnologys__class">
                 <p>Tecnologías usadas:</p>
                 <div>
