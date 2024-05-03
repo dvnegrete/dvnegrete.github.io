@@ -117,7 +117,7 @@ export const PortfolioData: ProjectDataInterface[] = [
     {
         nameProject: "Proyecto de Web Component: Calendario Doble ",
         projectURLGithub: "https://github.com/dvnegrete/calendar-double",
-        webURL: "https://www.npmjs.com/package/dvn-calendar-double",
+        webURL: "/portafolio/calendar",
         description: "Web Component desarrollado con StencilJS. Pruebas unitarias con JEST y coverage al 100%. Este proyecto fue uno de los componentes que genere internamente para uno de mis clientes en su aplicación web.",
         tecnologys: [TECNOLOGYS.Stencil, TECNOLOGYS.TS],
         imagePreviousProject: {
