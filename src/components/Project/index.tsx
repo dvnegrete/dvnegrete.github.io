@@ -2,9 +2,27 @@ import './styles.css'
 import { ProjectPropInterface } from '../../shared/Interfaces';
 
 import { PreviousImage, TecnologyDescription } from "../";
+import { Link } from 'react-router-dom';
 
 
 export const Project = ({ projectURL, webURL, nameProject, description, arrayImgUrls, tecs }: ProjectPropInterface) => {
+
+    const typeOfWebSite = (url: string) => {
+        return (
+            url.includes("http") ?
+            <a
+                href={webURL}
+                target='_blank'>
+                Ver sitio web
+            </a>
+            :
+            <Link
+                to={String(webURL)}                            >
+                Ver sitio web
+            </Link>
+        )
+    }
+
     return (
         <div className="containerProject">
             <div className='containerProject__name'>
@@ -28,7 +46,7 @@ export const Project = ({ projectURL, webURL, nameProject, description, arrayImg
                 {
                     webURL === undefined || webURL === "" ?
                         <></> :
-                        <a href={webURL} target='_blank'>Ver sitio web</a>
+                        typeOfWebSite(webURL)
                 }
             </div>
         </div>
