@@ -1,18 +1,73 @@
 import './styles.css'
 
-export const Iam = ()=> {
+export const Iam = () => {
+    const tecnologyInit = new Date("2008-01-02");
+    const devInit = new Date("2021-04-10");
+    const typescriptInit = new Date("2022-05-01")
+
+    const calcTime = (timeInit: Date) => {
+        const today = new Date();
+        const yearsExperience = today.getFullYear() - timeInit.getFullYear();
+        const monthExperience = today.getMonth() - timeInit.getMonth();
+        let years = yearsExperience;
+        let month: number | null = monthExperience;
+        let areThereMonths: string | null = "meses";
+        if (month < 0) {
+            years--;
+            month += 12
+        }
+        if (month === 1) {
+            areThereMonths = "mes"
+        }
+        if (month === 0) {
+            month = null;
+            areThereMonths = null;
+        }
+        return {
+            years,
+            month,
+            areThereMonths,
+        }
+    }
+
+    const timeOfDeveloper = () => {
+        const { years, month, areThereMonths } = calcTime(devInit);
+        return <span>{years} años {month} {areThereMonths}</span>;
+    }
+
+    const timeInTechnology = () => {
+        const { years } = calcTime(tecnologyInit);
+        return <span>{years}</span>;
+    }
+
+    const timeWithTs = () => {
+        const { years } = calcTime(typescriptInit);
+        return <span>{years}</span>;
+    }
+
     return (
         <section className='section__Iam'>
             <figure>
-                <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/dev-me.jpg" alt=""/>
+                <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/dev-me.jpg" alt="" />
             </figure>
             <div className="container__Iam">
-                <p>Comencé en abril de 2021 a desarrollar proyectos personales de práctica (Wikiclone, Calculadoras, Platzi Video, Comparador de Streaming, etc.) en paralelo al sitio web del CECATI 13, donde desarrollé principalmente mi habilidad con Javascript. El sitio web cecati13.edu.mx lo desarrolle en solitario. La primera parte de este proyecto consistió en mostrar los cursos disponibles, lo cual se hace conectado a una API creada con ExpressJS (NodeJS), y desplegado en APP Engine de GCP. También sirve la información de anuncios, y la galería de imágenes.</p>
-                <p>A finales de 2021, comencé a conocer y usar ReactJS, desarrolle el proyecto "Lista de tareas personales" (todoTask).</p>
-                <p>En abril de 2022, se dio la oportunidad de trabajar con un equipo de desarrollo más grande, al ser contratado por Agile Thought para un proyecto en Citibanamex Empresarial con el rol de Frontend Developer en el desarrollo de una funcionalidad de su App Mobile. Aquí comencé a usar y conocer las herramientas de gestión de Atlassian (JIRA, Confluence, Bitbucket). Las tecnologías usadas en este proyecto fueron principalmente AngularJS y SCSS.</p>
-                <p>A la par, continue con el proyecto secundario en cecati13.edu.mx desarrollado funcionalidades nuevas: un sistema de inscripción y el inicio del sistema de control escolar. Este desarrollo se realizó con VueJS en el Frontend. En el Backend implemente middlewares de autenticación con JWT y la encriptación de los usuarios de control escolar al consultar ciertas API; esta información se guarda en Firebase. Por otra parte, los comprobantes requeridos en la inscripción se digitalizaron, y el estudiante los envía con fotografía desde su celular mediante la aplicación web; los archivos se guardan en el servicio Blob Storage de Azure.</p>
-                <p>A finales de 2022 comencé a experimentar con Angular y Typescript, y adentrándome cada vez más al mundo de Cloud Computing, probado despliegues serveless en Azure Functions, AWS Lambda, y Cloud Functions de GCP. También probando despliegues de servidores de NodeJS en Railway y Heroku.</p>
-                <p>Por necesidades del proyecto al que se me asigno en abril de 2023, aprendí de forma ágil y urgente a usar y desarrollar en StencilJS, para la creación de Web Components, que se usarían en la creación de un Microfront. Las tecnologías usadas en este proyecto de menos 6 meses fueron Angular, StencilJS, Typescript, Jenkins, JEST y las herramientas de Atlassian. Este fue un proyecto sumamente desafiante, pero del cual aprendí mucho a nivel personal, ya que me permitió poner a prueba mi capacidad de aprendizaje rápido, adaptabilidad, resolución de problemas, trabajo en equipo, y hasta de liderar en algunas circunstancias.</p>
+
+                <p>Entusiasta de la tecnología, y desde hace {timeInTechnology()} años estoy involucrado de una manera u otra en ella. Tengo estudios truncos de Licenciatura en Ciencias de la Informática. </p>
+
+                <p>Actualmente tengo <span className='container__Iam--span'> {timeOfDeveloper()} de experiencia como developer</span>. Considero tener un nivel Semi-Senior; soy meticuloso y dedicado, también autodidacta y no necesito supervisión, puedo trabajar y entregar lo que se requiere, aunque eso me pueda tomar un poco más de tiempo. </p>
+
+                <p>Comencé desarrollando proyectos personales de práctica (Wikiclone, Calculadoras, Platzi Video, Comparador de Streaming, etc.) en paralelo al sitio web del CECATI 13, proyecto que desarrollé en solitario y donde pude pulir mi habilidad con <span className='container__Iam--span'>JavaScript</span> y tener fundamentos sólidos de HTML y CSS. </p>
+
+                <p>Trabaje en Agile Thought, asignado la mayor parte del tiempo a proyectos en Citibanamex Empresarial, donde colabore en equipos de desarrollo de software, principalmente como <span className='container__Iam--span'>Frontend </span>. Aquí usamos herramientas de gestión de Atlassian (JIRA, Confluence, Bitbucket), las cuales ahora están dentro de mis skills técnicos. </p>
+
+                <p>En la parte Frontend he tocado varios Frameworks o librerías, de acuerdo a las necesidades del proyecto, y aunque no tengo un favorito me inclino un poco más por React. Y desde hace {timeWithTs()} años que comencé a usar <span className='container__Iam--span'>TypeScript</span>, trato de implementarlo en todos los proyectos posibles.</p>
+
+                <p>En la parte del Backend, uso NodeJS, principalmente con ExpressJS y más recientemente NextJS; y prefiero usar bases de datos no relacionales como MongoDB o Firebase, sin embargo, también conozco lo necesario de SQL. </p>
+
+                <p>En lo que respecta a Cloud Computing, tengo los conocimientos necesarios para usar los servicios Saas o Paas que se ofrecen en muchos de los proveedores de este servicio. He trabajado Google Cloud Plataform, Microsoft Azure, Amazon Web Service, Heroku, Railway y Render. </p>
+
+                <p>Como me gusta pensar y trabajar en soluciones, siempre estoy dispuesto a escuchar distintas alternativas y procuro ver como implementar esas alternativas. </p>
+
             </div>
         </section>
     )

@@ -1,9 +1,12 @@
 .section__skills {
-    color: var(--textColor1);
+    color: var(--secondaryColor2);
     font-size: 1.6rem;
-    background: url(https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/unsplash_03.jpg);
-    background-size: 100vw;
-    background-attachment: fixed;
+    background-color: var(--background);    
+}
+
+.section__skills h2 {
+    text-align: center;
+    color: var(--textColor1);
 }
 
 .section__skills ul {
@@ -22,12 +25,12 @@
 }
 
 .section__skills p {
-    background: var(--mainColor2);
-    border-radius: 5em;
     padding: 4px;
 }
 
 .skills__img li img{
+    background: var(--secondaryColor3);
+    border-radius: 1em;
+    padding: 8px;
     width: 120px;
-    padding: 5px;
 }

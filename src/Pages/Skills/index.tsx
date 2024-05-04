@@ -16,6 +16,7 @@ const CONSTANTS_SKILLS = [
 export const Skills = () => {
     return (
         <section className='section__skills'>
+            <h2>Skills Técnicos</h2>
             <ul className='skills__img'>
                 {
                     Object.values(TECNOLOGYS).map(tecnology => (
