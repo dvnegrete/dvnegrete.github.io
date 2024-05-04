@@ -2,15 +2,9 @@ import { TECNOLOGYS } from '../../shared/CONSTANTS'
 import './styles.css'
 
 const CONSTANTS_SKILLS = [
-    'MySQL',
-    'Git',
-    'GitHub',
-    'BItbucket',
+    'Railway',
     'ExpressJS',
     'JWT',
-    'Railway',
-    'JIRA',
-    'Confluence',
 ];
 
 export const Skills = () => {
@@ -26,8 +20,6 @@ export const Skills = () => {
                         </li>
                     ))
                 }
-            </ul>
-            <ul>
                 {
                     CONSTANTS_SKILLS.map(skill => (
                         <li>

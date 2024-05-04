@@ -3,31 +3,31 @@ import { ProjectDataInterface } from "./Interfaces";
 export const TECNOLOGYS = {
     HTML: {
         name: "HTML5",
-        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/html5.png"
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/html5.svg"
     },
     CSS: {
         name: "CSS3",
-        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/css3.png"
-    },
-    AWS: {
-        name: "S3 de Amazon Web Services",
-        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/aws-logo.png"
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/css3-original.svg"
     },
     Bootstrap: {
         name: "Bootstrap",
-        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/boostrap.png"
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/bootstrap.svg"
+    },
+    Tailwind: {
+        name: "Tailwind CSS",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/tailwindcss.svg"
     },
     JS: {
         name: "JavaScript",
-        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/javascript.png"
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/javascript-js.svg"
     },
     TS: {
         name: "TypeScript",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/typescript-black.svg"
     },
     React: {
         name: "React",
-        url: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
+        url: 'https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/react.svg'
     },
     Angular: {
         name: "Angular",
@@ -37,62 +37,69 @@ export const TECNOLOGYS = {
         name: "VueJS",
         url: 'https://v2.vuejs.org/images/logo.svg'
     },
-    Azure: {
-        name: "Azure",
-        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/1200px-Microsoft_Azure.svg.png'
-    },
-    GCP: {
-        name: "Google Cloud Plataform",
-        url: "https://logodownload.org/wp-content/uploads/2021/06/google-cloud-logo-5.png"
+    Stencil: {
+        name: "StencilJS",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/stencil.svg"
     },
     Node: {
         name: "NodeJS",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
-    },
-    Stencil: {
-        name: "StencilJS",
-        url: "https://seeklogo.com/images/S/stencil-logo-2361B95AA4-seeklogo.com.png"
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/node-js.svg"
     },
     Mongo: {
         name: "MongoDB",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/mongodb-original-wordmark.svg"
     },
     Firebase: {
         name: "Firebase",
-        url: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Firebase_Logo.png"
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/firebase.svg"
+    },
+    MySql: {
+        name: "MySql",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/mysql.svg"
+    },
+    Azure: {
+        name: "Azure",
+        url: 'https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/microsoft-azure.svg'
+    },
+    GCP: {
+        name: "Google Cloud Plataform",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/gcp-color.svg"
+    },
+    AWS: {
+        name: "S3 de AWS",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/aws.svg"
     },
     ServerRender: {
         name: "Render",
-        url: "https://dka575ofm4ao0.cloudfront.net/pages-transactional_logos/retina/89884/render-status-4b015255-e0cc-422c-943d-4f60b5f03094.png"
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/render.svg"
     },
-    Tailwind: {
-        name: "Tailwind CSS",
-        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png"
+    git: {
+        name: "Git",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/git.svg"
+    },
+    github: {
+        name: "Github",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/github.svg"
+    },
+    Bitbucket: {
+        name: "Bitbucket",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/bitbucket.svg"
+    },
+    JIRA: {
+        name: "JIRA",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/jira.svg"
+    },
+    Confluence: {
+        name: "Confluence",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/confluence.svg"
     },
     JEST: {
         name: "JEST",
-        url: "https://icon.icepanel.io/Technology/svg/Jest.svg"
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/jest.svg"
     },
 }
 
 export const PortfolioData: ProjectDataInterface[] = [
-    {
-        nameProject: "WikiClon",
-        webURL: "https://dvnegrete.github.io/WikiClone/",
-        projectURLGithub: "https://github.com/dvnegrete/WikiClone",
-        description: [
-            "De los primeros clones de sitios web que cree. Aquí se destaca el uso de CSS y Diseño responsive que he trabajado desde mis primeros proyectos.",
-            "Desarrollado entre Abril y Agosto 2021"
-        ],
-        tecnologys: [TECNOLOGYS.HTML, TECNOLOGYS.CSS],
-        imagePreviousProject: {
-            arrayUrl: [
-                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon-mobile.jpg",
-                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon.jpg",
-                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon-mobile2.jpg"
-            ],
-        },
-    },
     {
         nameProject: "Sitio del CECATI 13",
         webURL: "https://cecati13.edu.mx",
@@ -102,7 +109,7 @@ export const PortfolioData: ProjectDataInterface[] = [
             "Primera Fase (oct 2021 - mar 2022): Se mostraban los cursos disponibles. Cree una API con ExpressJS (NodeJS) conectada a una SpreedSheet de Google Docs, por temas de costos y recursos, y se desplegada en APP Engine de GCP. Trabaje en el diseño del sitio, la parte UX/UI, cuidando la accesibilidad, su diseño responsive, y con buen SEO. El desarrollo se hizo con Vanilla JavaScript.",
             "Segunda Fase (abr 2021 - feb 2023): Implemente la inscripción a los cursos través del sitio web y acceso al personal de control escolar. Este parte del desarrollo en el frontend la realice con VueJS. En el Backend implemente middlewares para autenticación usando JWT y encriptación para las contraseñas de los usuarios de control escolar. Conectado a Firebase. Como parte de la digitalización de este sistema de inscripciones, use Blob Storage de Microsoft Azure para guardar los comprobantes digitales generados en este proceso.",
         ],
-        tecnologys: [TECNOLOGYS.Vue, TECNOLOGYS.Firebase, TECNOLOGYS.Node, TECNOLOGYS.GCP, TECNOLOGYS.Azure],
+        tecnologys: [TECNOLOGYS.JS, TECNOLOGYS.Node, TECNOLOGYS.GCP, TECNOLOGYS.Vue, TECNOLOGYS.Firebase, TECNOLOGYS.Azure],
         imagePreviousProject: {
             arrayUrl: [
                 "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-moblie.jpg",
@@ -131,7 +138,7 @@ export const PortfolioData: ProjectDataInterface[] = [
         },
     },
     {
-        nameProject: "Proyecto de Web Component: Calendario Doble ",
+        nameProject: "Proyecto de Web Component: Calendario Doble",
         projectURLGithub: "https://github.com/dvnegrete/calendar-double",
         webURL: "https://www.npmjs.com/package/dvn-calendar-double",
         description: [
@@ -146,6 +153,22 @@ export const PortfolioData: ProjectDataInterface[] = [
             arrayUrl: [
                 "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/calendar-double-01.png",
                 "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/calendar-double-02.png"
+            ],
+        },
+    },
+    {
+        nameProject: "Proyecto Práctica. Administración de Hospitales",
+        projectURLGithub: "https://github.com/dvnegrete/angular-adv-adminpro",
+        description: [
+            "Proyecto Full Stack desarrollado en el de Curso Angular Avanzando de Udemy. (febrero - abril 2023)",
+            "El desarrollo se centró en una aplicación que pudiera ayudar en la administración de un Hospital.",
+            "Se creo un Backend en ExpressJS conectado a MongoDB (actualmente solo disponible el código)"
+        ],
+        tecnologys: [TECNOLOGYS.Angular, TECNOLOGYS.TS, TECNOLOGYS.Mongo, TECNOLOGYS.Node],
+        imagePreviousProject: {
+            arrayUrl: [
+                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/angular-adminPro-desktop.png",
+                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/angular-adminPro.png"
             ],
         },
     },
@@ -191,6 +214,23 @@ export const PortfolioData: ProjectDataInterface[] = [
             arrayUrl: [
                 "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/ToDo+Task-mobile.jpg",
                 "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/ToDo+Task-mobile2.jpg",
+            ],
+        },
+    },
+    {
+        nameProject: "WikiClon",
+        webURL: "https://dvnegrete.github.io/WikiClone/",
+        projectURLGithub: "https://github.com/dvnegrete/WikiClone",
+        description: [
+            "De los primeros clones de sitios web que cree. Aquí se destaca el uso de CSS y Diseño responsive que he trabajado desde mis primeros proyectos.",
+            "Desarrollado entre Abril y Agosto 2021"
+        ],
+        tecnologys: [TECNOLOGYS.HTML, TECNOLOGYS.CSS],
+        imagePreviousProject: {
+            arrayUrl: [
+                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon-mobile.jpg",
+                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon.jpg",
+                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/wikiclon-mobile2.jpg"
             ],
         },
     },

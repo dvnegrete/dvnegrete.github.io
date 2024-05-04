@@ -35,7 +35,10 @@ export const Project = ({ projectURL, webURL, nameProject, description, arrayImg
                 <h5>{nameProject}</h5>
                 {
                     arrayImgUrls.arrayUrl.length > 0 ?
-                        <PreviousImage arrayUrl={arrayImgUrls.arrayUrl} />
+                        <PreviousImage
+                            arrayUrl={arrayImgUrls.arrayUrl}
+                            name={nameProject}
+                        />
                         : <></>
                 }
             </div>
