@@ -1,6 +1,7 @@
 header {
+    grid-area: header;
     width: 100vw;
-    min-height: 75px;
+    min-height: 100px;
     background: linear-gradient(var(--mainColor1), var(--background));
     position: fixed;
     display: flex;

@@ -1,0 +1,27 @@
+.footer {
+    grid-area: footer;
+    background: linear-gradient(180deg, var(--background), var(--secondaryColor3));
+    color: var(--textColor1);
+    min-height: 60px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer > p {
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+.footer figure {
+    padding: 5px 0;
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+
+.footer figure img {
+    width: 20px;
+}

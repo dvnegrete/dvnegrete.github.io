@@ -72,58 +72,58 @@ export const Contact = () => {
                 <h4>Deja un mensaje para contactarme</h4>
                 {
                     !skeleton ?
-                <form>
-                    <p>
-                        <label htmlFor="name">
-                            Nombre
-                            <span className="required">*</span>
-                        </label>
-                        <input type="text" name="name" required placeholder="Escribe tu nombre" ref={nameRef} />
-                    </p>
+                        <form>
+                            <p>
+                                <label htmlFor="name">
+                                    Nombre
+                                    <span className="required">*</span>
+                                </label>
+                                <input type="text" name="name" required placeholder="Escribe tu nombre" ref={nameRef} />
+                            </p>
 
-                    <p>
-                        <label htmlFor="email">
-                            Email
-                            <span className="required">*</span>
-                        </label>
-                        <input type="email" name="email" required placeholder="Escribe tu Email" ref={emailRef} />
-                    </p>
+                            <p>
+                                <label htmlFor="email">
+                                    Email
+                                    <span className="required">*</span>
+                                </label>
+                                <input type="email" name="email" required placeholder="Escribe tu Email" ref={emailRef} />
+                            </p>
 
-                    <p>
-                        <label htmlFor="telefone">
-                            Teléfono
-                        </label>
-                        <input type="tel" name="telefone" placeholder="Escribe tu teléfono" ref={phoneRef} />
-                    </p>
+                            <p>
+                                <label htmlFor="telefone">
+                                    Teléfono
+                                </label>
+                                <input type="tel" name="telefone" placeholder="Escribe tu teléfono" ref={phoneRef} />
+                            </p>
 
-                    <p>
-                        <label htmlFor="business">
-                            Asunto
-                            <span className="required">*</span>
-                        </label>
-                        <input type="text" name="business" required placeholder="Escribe un asunto" ref={businessRef} />
-                    </p>
+                            <p>
+                                <label htmlFor="business">
+                                    Asunto
+                                    <span className="required">*</span>
+                                </label>
+                                <input type="text" name="business" required placeholder="Escribe un asunto" ref={businessRef} />
+                            </p>
 
-                    <p>
-                        <label htmlFor="message">
-                            Mensaje
-                            <span className="required">*</span>
-                        </label>
-                        <textarea name="message" className="texto_mensaje"
-                            required placeholder="Deja aquí tu comentario..."
-                            ref={messageRef} />
-                    </p>
+                            <p>
+                                <label htmlFor="message">
+                                    Mensaje
+                                    <span className="required">*</span>
+                                </label>
+                                <textarea name="message" className="texto_mensaje"
+                                    required placeholder="Deja aquí tu comentario..."
+                                    ref={messageRef} />
+                            </p>
 
-                    <button type="button" name="sendForm" onClick={sendData}>
-                        Enviar
-                    </button>
+                            <button type="button" name="sendForm" onClick={sendData}>
+                                Enviar
+                            </button>
 
-                    <p className="warning">
-                        <span className="required"> * </span>los campos son obligatorios.
-                    </p>
+                            <p className="warning">
+                                <span className="required"> * </span>los campos son obligatorios.
+                            </p>
 
-                </form>
-                : <Loader/>
+                        </form>
+                        : <Loader />
                 }
             </div>
         </section>

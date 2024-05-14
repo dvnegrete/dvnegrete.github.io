@@ -6,11 +6,17 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Homenaje', sans-serif;  
+  font-family: 'Homenaje', sans-serif;
 }
 
 #root {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
 }
 
 :root {
@@ -25,36 +31,38 @@ html {
   --secondaryColor4: #D405D0;
 
   font-family: 'Homenaje', sans-serif;
-  /* line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */  
 }
 
 main {
+  grid-area: main;
   background-color: var(--background);
-  margin-top: 75px;
-  height: calc(100vh - 75px);
+  padding-top: 75px;
+  height: 100%;
   width: 100vw;
+}
+
+.page {
+  color: var(--secondaryColor4);
+  text-align: center;
+  font-size: 2.8rem;
 }
 
 @media (min-width: 721px) and (max-width: 980px) {
   main {
-    margin-top: 157px;
-    height: calc(100vh - 157px);
+    padding-top: 157px;
+  }
+
+  .page {
+    display: none;
   }
 }
 
 @media (min-width: 981px) {
   main {
-    margin-top: 116px;
-    height: calc(100vh - 116px);
+    padding-top: 116px;
+  }
+
+  .page {
+    display: none;
   }
 }
