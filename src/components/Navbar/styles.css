@@ -33,7 +33,7 @@ a:hover{
     text-decoration: underline;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 860px) {
     .nav {
         display: flex;
         flex-direction: row;

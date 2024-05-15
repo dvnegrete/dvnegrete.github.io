@@ -4,11 +4,6 @@
     background-color: var(--background);    
 }
 
-.section__skills h2 {
-    text-align: center;
-    color: var(--textColor1);
-}
-
 .section__skills ul {
     display: flex;
     flex-wrap: wrap;

@@ -13,7 +13,7 @@
     margin: 15px 15px 0 0;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 860px) {
     .menu {
         display: none;
     }

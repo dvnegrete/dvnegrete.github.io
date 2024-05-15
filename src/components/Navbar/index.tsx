@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export const Navbar = ({ hidden }: { hidden: boolean }) => {
 
     const showNav = () => {
-        const breakpoint = "720px";
+        const breakpoint = "860px";
         const mediaquery = window.matchMedia(`(min-width: ${breakpoint})`);
         return mediaquery.matches ? false : hidden;
     }
