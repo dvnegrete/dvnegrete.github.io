@@ -1,15 +1,18 @@
-import { useState } from "react"
+import { useContext } from "react"
 import { Menu } from "../Menu"
 import { Navbar } from "../Navbar"
 
 import './styles.css';
+import { GlobalContext } from "../../context/GlobalContext";
 
 export const HeaderComponent = () => {
 
-    const [valueModal, setValueModal] = useState(true);
+    const context = useContext(GlobalContext);
+
+    const valueModal = context?.valueModal !== undefined ? context?.valueModal : true;
 
     const toogleModal = () => {
-        setValueModal(!valueModal);
+        context?.setValueModal(!context.valueModal);
     }
 
     return (

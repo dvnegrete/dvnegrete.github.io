@@ -12,6 +12,7 @@ export const AppRoute = () => {
     useEffect(() => {
         const newTitle = getTitleFromPath(location.pathname);
         context?.setTitle(newTitle);
+        context?.setValueModal(true);
     }, [location]);
 
 
