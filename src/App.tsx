@@ -1,3 +1,4 @@
+import 'animate.css';
 import { HashRouter } from 'react-router-dom'
 
 import { HeaderComponent } from './components'
@@ -16,7 +17,9 @@ function App() {
 
       <main className='main'>
 
-        <h2 className='page'>{context?.title}</h2>
+        <h2 className='page'>
+          {context?.title}
+        </h2>
         <AppRoute />
 
       </main>

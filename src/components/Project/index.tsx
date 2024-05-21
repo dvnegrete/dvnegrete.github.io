@@ -31,7 +31,7 @@ export const Project = ({ projectURL, webURL, nameProject, description, arrayImg
 
     return (
         <div className="containerProject">
-            <div className='containerProject__name'>
+            <div className='containerProject__name animate__animated animate__backInDown'>
                 <h5>{nameProject}</h5>
                 {
                     arrayImgUrls.arrayUrl.length > 0 ?
@@ -43,14 +43,14 @@ export const Project = ({ projectURL, webURL, nameProject, description, arrayImg
                 }
             </div>
 
-            <div className='containerProject__description'>{structureDescription(description)}</div>
-            <div className="tecnologys__class">
+            <div className='containerProject__description animate__animated animate__backInUp'>{structureDescription(description)}</div>
+            <div className="tecnologys__class animate__animated animate__rotateInUpLeft">
                 <p>Tecnologías usadas:</p>
                 <div>
                     <TecnologyDescription tecnologys={tecs.tecnologys} />
                 </div>
             </div>
-            <div className='containerProject__buttons'>
+            <div className='containerProject__buttons animate__animated animate__rotateInUpLeft'>
                 <a href={projectURL} target='_blank'>Ver Codigo</a>
                 {
                     webURL === undefined || webURL === "" ?

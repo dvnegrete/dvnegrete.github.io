@@ -48,9 +48,10 @@ export const Iam = () => {
     return (
         <section className='section__Iam'>
             <figure>
-                <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/dev-me.jpg" alt="" />
+                <img className='animate__animated animate__backInUp' 
+                    src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/dev-me.jpg" alt="" />
             </figure>
-            <div className="container__Iam">
+            <div className="container__Iam animate__animated animate__backInRight">
 
                 <p>Entusiasta de la tecnología, y desde hace {timeInTechnology()} años estoy involucrado de una manera u otra en ella. Tengo estudios truncos de Licenciatura en Ciencias de la Informática. </p>
 

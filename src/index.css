@@ -10,6 +10,8 @@ html {
 }
 
 #root {
+  background-color: var(--background);
+  min-height: 100vh;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr auto 1fr;

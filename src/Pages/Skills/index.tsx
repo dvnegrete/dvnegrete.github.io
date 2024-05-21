@@ -13,7 +13,7 @@ export const Skills = () => {
             <ul className='skills__img'>
                 {
                     Object.values(TECNOLOGYS).map(tecnology => (
-                        <li>
+                        <li className='animate__animated animate__fadeInDownBig'>
                             <img src={tecnology.url} />
                             <p>{tecnology.name}</p>
                         </li>
@@ -21,7 +21,7 @@ export const Skills = () => {
                 }
                 {
                     CONSTANTS_SKILLS.map(skill => (
-                        <li>
+                        <li className='animate__animated animate__fadeInDownBig'>
                             <p>{skill}</p>
                         </li>
                     ))

@@ -68,7 +68,7 @@ export const Contact = () => {
 
     return (
         <section className="contact_form">
-            <div className="form">
+            <div className="form animate__animated animate__bounceInUp">
                 <h4>Deja un mensaje para contactarme</h4>
                 {
                     !skeleton ?
