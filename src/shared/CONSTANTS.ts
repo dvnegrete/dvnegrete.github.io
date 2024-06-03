@@ -140,7 +140,7 @@ export const PortfolioData: ProjectDataInterface[] = [
     {
         nameProject: "Proyecto de Web Component: Calendario Doble",
         projectURLGithub: "https://github.com/dvnegrete/calendar-double",
-        webURL: "https://www.npmjs.com/package/dvn-calendar-double",
+        webURL: "https://dvnegrete.github.io/Portafolio-calendario-doble/",
         description: [
             "Web Component desarrollado con StencilJS. (dic 2023 - ene 2024)",
             "Por necesidades del proyecto con el cliente Citi, de abril a diciembre de 2023, trabaje en una funcionalidad que requería crear un MicroFrontend, y sus respectivos componentes web usando StencilJS. El Microfront se montó sobre una APP creada en Angular.",
