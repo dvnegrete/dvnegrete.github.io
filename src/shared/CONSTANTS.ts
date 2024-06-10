@@ -97,6 +97,14 @@ export const TECNOLOGYS = {
         name: "JEST",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/jest.svg"
     },
+    Docker: {
+        name: "Docker",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/docker.svg"
+    },
+    Jenkins: {
+        name: "Jenkins",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/jenkins.svg"
+    },
 }
 
 export const PortfolioData: ProjectDataInterface[] = [

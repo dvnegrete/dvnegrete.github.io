@@ -14,7 +14,7 @@ export const Home = () => {
             </div>
             <div className="social__media animate__animated animate__animated animate__bounceIn">
                 <a href="https://github.com/dvnegrete">
-                    <img src="https://logodix.com/logo/64439.png" alt="github" />
+                    <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/github.svg" alt="github" />
                 </a>
                 <a href="https://www.linkedin.com/in/dvnegrete/">
                     <img src="https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/linkend-logo.png" alt="linkedin" />
