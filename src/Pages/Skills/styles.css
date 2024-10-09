@@ -1,7 +1,10 @@
 .section__skills {
     color: var(--secondaryColor2);
     font-size: 1.6rem;
-    background-color: var(--background);    
+    background-color: var(--background);
+    max-width: 1330px;
+    padding: 0 1em;
+    margin: 0 auto;
 }
 
 .section__skills ul {

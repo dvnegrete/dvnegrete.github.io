@@ -1,6 +1,10 @@
 import { ProjectDataInterface } from "./Interfaces";
 
 export const TECNOLOGYS = {
+    Astro: {
+        name: "Astro",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/astro-icon-light.svg"
+    },
     HTML: {
         name: "HTML5",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/html5.svg"
@@ -41,6 +45,10 @@ export const TECNOLOGYS = {
         name: "StencilJS",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/stencil.svg"
     },
+    NextJS: {
+        name: "NextJS",
+        url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/nextjs.svg"
+    },
     Node: {
         name: "NodeJS",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/node-js.svg"
@@ -66,7 +74,7 @@ export const TECNOLOGYS = {
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/gcp-color.svg"
     },
     AWS: {
-        name: "S3 de AWS",
+        name: "AWS",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/aws.svg"
     },
     ServerRender: {
@@ -104,25 +112,57 @@ export const TECNOLOGYS = {
     Jenkins: {
         name: "Jenkins",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/jenkins.svg"
-    },
+    },    
 }
 
 export const PortfolioData: ProjectDataInterface[] = [
     {
-        nameProject: "Sitio del CECATI 13",
+        nameProject: "ProyectoSweb",
+        webURL: "https://proyectosweb.com.mx",
+        projectURLGithub: "https://github.com/dvnegrete/proyectosweb",
+        description: [
+            "Servicios de Desarrollo Freelance (septiembre 2024).",
+            "Desarrollado en Astro e incorporando Calendly, y un componente de React en el formulario de contacto. Con Astro la accesibilida y el SEO mejoran notablemente. El DarkMode del sitio se controla desde un boton. Con Github Actions se tiene CI/CD al reaizar cambios.",
+        ],
+        tecnologys: [TECNOLOGYS.Astro, TECNOLOGYS.github, TECNOLOGYS.React, TECNOLOGYS.Tailwind],
+        imagePreviousProject: {
+            arrayUrl: [
+                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/proyectosSweb-dark-mobile2.png",
+                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/proyectosSweb-light.png",
+                "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/proyectosSweb-dark-mobilepng.png",
+            ],
+        },
+    },
+    {
+        nameProject: "Sitio web del CECATI 13",
         webURL: "https://cecati13.edu.mx",
         projectURLGithub: "https://github.com/cecati13/cecati13",
         description: [
-            "Desarrollado en dos etapas.",
-            "Primera Fase (oct 2021 - mar 2022): Se mostraban los cursos disponibles. Cree una API con ExpressJS (NodeJS) conectada a una SpreedSheet de Google Docs, por temas de costos y recursos, y se desplegada en APP Engine de GCP. Trabaje en el diseño del sitio, la parte UX/UI, cuidando la accesibilidad, su diseño responsive, y con buen SEO. El desarrollo se hizo con Vanilla JavaScript.",
-            "Segunda Fase (abr 2022 - feb 2023): Implemente la inscripción a los cursos través del sitio web y acceso al personal de control escolar. Este parte del desarrollo en el frontend la realice con VueJS. En el Backend implemente middlewares para autenticación usando JWT y encriptación para las contraseñas de los usuarios de control escolar. Conectado a Firebase. Como parte de la digitalización de este sistema de inscripciones, use Blob Storage de Microsoft Azure para guardar los comprobantes digitales generados en este proceso.",
+            "Desarrollado en tres etapas.",
+            "Primera Fase (oct 2021 - mar 2022): Diseño del sitio con la UX/UI, accesibilidad, estilo responsive, y buen SEO. El desarrollo fue con Vanilla JavaScript.",
+            "Segunda Fase (abr 2022 - feb 2023): Implemente la inscripción a los cursos desde el sitio web y el acceso con login. Desarrollado con VueJS.",
+            "Tercera Fase (may 2024 - actual): Añadi autenticacion con OAuth 2.0 con Microsoft Azure. Se añadio con Github Actions un proceso de CI/CD para los despliegues los cambios.",
         ],
-        tecnologys: [TECNOLOGYS.JS, TECNOLOGYS.Node, TECNOLOGYS.GCP, TECNOLOGYS.Vue, TECNOLOGYS.Firebase, TECNOLOGYS.Azure],
+        tecnologys: [TECNOLOGYS.JS, TECNOLOGYS.Vue, TECNOLOGYS.CSS, TECNOLOGYS.github],
         imagePreviousProject: {
             arrayUrl: [
                 "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-moblie.jpg",
                 "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/proyectos/cecati13-desktop.jpg"
             ],
+        },
+    },
+    {
+        nameProject: "API del CECATI 13",
+        projectURLGithub: "https://github.com/cecati13/apiServerlessSpreadSheet",
+        description: [
+            "Desarrollado en tres etapas.",
+            "Primera Fase (oct 2021 - mar 2022): API con ExpressJS conectada a una SpreedSheet de Google Docs, y desplegada en APP Engine de GCP.",
+            "Segunda Fase (abr 2022 - feb 2023): Implementación de middlewares para autenticación usando JWT y encriptación para las contraseñas para usuarios. Conexión a Firebase de para almacenar usuarios. Para la digitalización de los documentos de inscripciones, use Blob Storage de Microsoft Azure, y la inforamción de las inscripciones de almacena en Spreedsheet.",
+            "Tercera Fase Fase (may 2024 - actual): Cambio a autenticacion con OAuth 2.0 con Microsoft Azure. Migre infroamción a una Base de datos MySQL y se elimina dependencia de SpreedSheet. El servidor web se migro de App Engine a Cloud Run para bajar costos y ser completamente Serverless. Se implementa CI/CD en Cloud Run y Cloud Build de GCP junto con Github Actions.",
+        ],
+        tecnologys: [TECNOLOGYS.Node, TECNOLOGYS.Firebase, TECNOLOGYS.GCP, TECNOLOGYS.MySql, TECNOLOGYS.Azure, TECNOLOGYS.github],
+        imagePreviousProject: {
+            arrayUrl: [],
         },
     },
     {

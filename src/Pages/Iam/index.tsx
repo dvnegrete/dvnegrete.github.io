@@ -3,7 +3,7 @@ import './styles.css'
 export const Iam = () => {
     const tecnologyInit = new Date("2008-01-02");
     const devInit = new Date("2021-04-10");
-    const typescriptInit = new Date("2022-05-01")
+    const typescriptInit = new Date("2022-07-01")
 
     const calcTime = (timeInit: Date) => {
         const today = new Date();
@@ -61,11 +61,11 @@ export const Iam = () => {
 
                 <p>Trabaje en Agile Thought, asignado la mayor parte del tiempo a proyectos en Citibanamex Empresarial, donde colabore en equipos de desarrollo de software, principalmente como <span className='container__Iam--span'>Frontend </span>. Aquí usamos herramientas de gestión de Atlassian (JIRA, Confluence, Bitbucket), las cuales ahora están dentro de mis skills técnicos. </p>
 
-                <p>En la parte Frontend he tocado varios Frameworks o librerías, de acuerdo a las necesidades del proyecto, y aunque no tengo un favorito me inclino un poco más por React. Y desde hace {timeWithTs()} años que comencé a usar <span className='container__Iam--span'>TypeScript</span>, trato de implementarlo en todos los proyectos posibles.</p>
+                <p>En la parte Frontend he tocado varios Frameworks o librerías, de acuerdo a las necesidades del proyecto, y aunque no tengo un favorito me inclino un poco más por React. Y desde hace {timeWithTs()} años que comencé a usar <span className='container__Iam--span'>TypeScript</span>, trato de implementarlo en todos los proyectos posibles. También estoy usando Astro para generar sitios web orientados a contenidos.</p>
 
-                <p>En la parte del Backend, uso NodeJS, principalmente con ExpressJS y más recientemente NextJS; y prefiero usar bases de datos no relacionales como MongoDB o Firebase, sin embargo, también conozco lo necesario de SQL. </p>
+                <p>En la parte del Backend, uso NodeJS, principalmente con ExpressJS y más recientemente NextJS; y aunque prefiero usar bases de datos no relacionales como MongoDB o Firebase por la agilidad con que permiten construir una aplicación, uso MySQL en algunos proyectos. He implementado una funcionalidad de autenticación con OAuth 2.0.</p>
 
-                <p>En lo que respecta a Cloud Computing, tengo los conocimientos necesarios para usar los servicios Saas o Paas que se ofrecen en muchos de los proveedores de este servicio. He trabajado Google Cloud Plataform, Microsoft Azure, Amazon Web Service, Heroku, Railway y Render. </p>
+                <p>En lo que respecta a Cloud Computing, tengo los conocimientos necesarios para usar los servicios Saas o Paas que se ofrecen en muchos de los proveedores de este servicio. He trabajado Google Cloud Plataform, Microsoft Azure, Amazon Web Service, Heroku, Railway y Render. He implementado en mis proyectos conceptos de DevOps, para un CI/CD en los despliegues de los cambios en los proyectos que tengo, siendo en Github Actions, una de las configuraciones mas comunes que implemento para generar un flujo de CI/CD. </p>
 
                 <p>Como me gusta pensar y trabajar en soluciones, siempre estoy dispuesto a escuchar distintas alternativas y procuro ver como implementar esas alternativas. </p>
 
