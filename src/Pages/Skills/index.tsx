@@ -4,7 +4,7 @@ import './styles.css'
 const CONSTANTS_SKILLS = [
     'Railway',
     'ExpressJS',
-    'JWT',
+    'OAuth 2.0',
 ];
 
 export const Skills = () => {
