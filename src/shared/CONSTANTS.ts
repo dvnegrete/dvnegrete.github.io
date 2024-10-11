@@ -122,7 +122,7 @@ export const PortfolioData: ProjectDataInterface[] = [
         projectURLGithub: "https://github.com/dvnegrete/proyectosweb",
         description: [
             "Servicios de Desarrollo Freelance (septiembre 2024).",
-            "Desarrollado en Astro e incorporando Calendly, y un componente de React en el formulario de contacto. Con Astro la accesibilida y el SEO mejoran notablemente. El DarkMode del sitio se controla desde un boton. Con Github Actions se tiene CI/CD al reaizar cambios.",
+            "Desarrollado en Astro e incorporando Calendly, y un componente de React en el formulario de contacto. Con Astro la accesibilidad y el SEO mejoran notablemente. El DarkMode del sitio se controla desde un boton. Con Github Actions se tiene CI/CD al reaizar cambios.",
         ],
         tecnologys: [TECNOLOGYS.Astro, TECNOLOGYS.github, TECNOLOGYS.React, TECNOLOGYS.Tailwind],
         imagePreviousProject: {
@@ -153,14 +153,14 @@ export const PortfolioData: ProjectDataInterface[] = [
     },
     {
         nameProject: "API del CECATI 13",
-        projectURLGithub: "https://github.com/cecati13/apiServerlessSpreadSheet",
+        projectURLGithub: "https://github.com/dvnegrete/APIc13Inscripciones",
         description: [
             "Desarrollado en tres etapas.",
             "Primera Fase (oct 2021 - mar 2022): API con ExpressJS conectada a una SpreedSheet de Google Docs, y desplegada en APP Engine de GCP.",
             "Segunda Fase (abr 2022 - feb 2023): Implementación de middlewares para autenticación usando JWT y encriptación para las contraseñas para usuarios. Conexión a Firebase de para almacenar usuarios. Para la digitalización de los documentos de inscripciones, use Blob Storage de Microsoft Azure, y la inforamción de las inscripciones de almacena en Spreedsheet.",
             "Tercera Fase Fase (may 2024 - actual): Cambio a autenticacion con OAuth 2.0 con Microsoft Azure. Migre infroamción a una Base de datos MySQL y se elimina dependencia de SpreedSheet. El servidor web se migro de App Engine a Cloud Run para bajar costos y ser completamente Serverless. Se implementa CI/CD en Cloud Run y Cloud Build de GCP junto con Github Actions.",
         ],
-        tecnologys: [TECNOLOGYS.Node, TECNOLOGYS.Firebase, TECNOLOGYS.GCP, TECNOLOGYS.MySql, TECNOLOGYS.Azure, TECNOLOGYS.github],
+        tecnologys: [TECNOLOGYS.Node, TECNOLOGYS.Firebase, TECNOLOGYS.GCP, TECNOLOGYS.MySql, TECNOLOGYS.Azure, TECNOLOGYS.Docker],
         imagePreviousProject: {
             arrayUrl: [],
         },

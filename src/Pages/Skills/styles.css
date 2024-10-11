@@ -26,9 +26,14 @@
     padding: 4px;
 }
 
-.skills__img li img{
+.skills__img li img {
     background: var(--secondaryColor3);
     border-radius: 1em;
     padding: 8px;
     width: 120px;
+    transition: transform 0.7s ease;
+}
+
+.skills__img li img:hover {
+    transform: rotate(360deg) scale(0.8);
 }

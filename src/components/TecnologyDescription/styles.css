@@ -1,10 +1,11 @@
 .tecnology {
   width: 60px;
   padding: 5px;
+  transition: transform 1s ease;
 }
 
 .tecnology:hover {
-  transform: scale(1.5);
+  transform: rotate(360deg) scale(1.5);
 }
 
 .tec-figure {
