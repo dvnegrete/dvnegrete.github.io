@@ -9,24 +9,41 @@ const CONSTANTS_SKILLS = [
 
 export const Skills = () => {
     return (
-        <section className='section__skills'>
-            <ul className='skills__img'>
-                {
-                    Object.values(TECNOLOGYS).map(tecnology => (
-                        <li className='animate__animated animate__fadeInDownBig'>
-                            <img src={tecnology.url} />
-                            <p>{tecnology.name}</p>
-                        </li>
-                    ))
-                }
-                {
-                    CONSTANTS_SKILLS.map(skill => (
-                        <li className='animate__animated animate__fadeInDownBig'>
-                            <p>{skill}</p>
-                        </li>
-                    ))
-                }
-            </ul>
-        </section>
+        <>
+            <section className='section__skills'>
+                <ul className='skills__img'>
+                    {
+                        Object.values(TECNOLOGYS).map(tecnology => (
+                            <li className='animate__animated animate__fadeInDownBig'>
+                                <img src={tecnology.url} />
+                                <p>{tecnology.name}</p>
+                            </li>
+                        ))
+                    }
+                    {
+                        CONSTANTS_SKILLS.map(skill => (
+                            <li className='animate__animated animate__fadeInDownBig'>
+                                <p>{skill}</p>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </section>
+
+            <h2 className='title--certifications'>Certificaciones</h2>
+            <section className='certifications'>
+                <p>
+                    <a href='https://dvnimage.blob.core.windows.net/certificates/Azure%20Fundamentals.pdf'>
+                        AZ-900
+                    </a>
+                </p>
+                <embed
+                    src="https://dvnimage.blob.core.windows.net/certificates/Azure%20Fundamentals.pdf"
+                    type="application/pdf"
+                    width="100%"
+                    height="100%"
+                />
+            </section>
+        </>
     )
 }
