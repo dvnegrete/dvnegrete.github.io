@@ -37,3 +37,44 @@
 .skills__img li img:hover {
     transform: rotate(360deg) scale(0.8);
 }
+
+.title--certifications{
+    color: var(--secondaryColor4);
+    text-align: center;
+    font-size: 4rem;
+}
+
+.certifications {
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.certifications > p {
+    text-align: center;
+}
+
+.certifications > p  > a {
+    color: var(--secondaryColor2);
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.certifications embed {
+    min-height: 50vh;
+    padding: 15px 0;
+}
+
+@media (min-width: 530px) {
+    .certifications embed{
+        min-height: 70vh;
+    }
+}
+
+@media (min-width: 981px) {
+    .certifications embed{
+        min-height: 85vh;
+    }
+}
