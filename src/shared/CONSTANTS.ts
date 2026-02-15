@@ -112,10 +112,49 @@ export const TECNOLOGYS = {
     Jenkins: {
         name: "Jenkins",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/jenkins.svg"
-    },    
+    },
 }
 
 export const PortfolioData: ProjectDataInterface[] = [
+    {
+        nameProject: "Condominio El Agave",
+        webURL: "https://condominioelagave.com.mx",
+        projectURLGithub: "https://github.com/dvnegrete/Agave-Frontend",
+        description: [
+            "Aplicación integral para la administración del Condominio El Agave.",
+            "El frontend (Agave-Frontend) está desarrollado con React, ofreciendo una interfaz moderna y responsiva para los residentes y administradores.",
+            "El backend (Agave-Backend) utiliza Node.js para gestionar la lógica del negocio, base de datos y autenticación."
+        ],
+        tecnologys: [TECNOLOGYS.React, TECNOLOGYS.Node, TECNOLOGYS.JS, TECNOLOGYS.CSS],
+        imagePreviousProject: {
+            arrayUrl: [],
+        },
+    },
+    {
+        nameProject: "Utilities: Migrate DB from CSV",
+        projectURLGithub: "https://github.com/dvnegrete/migrateDB-fromCSV",
+        description: [
+            "Herramienta de utilidad para migración de datos.",
+            "Permite migrar datos desde archivos CSV hacia bases de datos SQL o NoSQL, facilitando la importación masiva de información."
+        ],
+        tecnologys: [TECNOLOGYS.Node, TECNOLOGYS.TS, TECNOLOGYS.MySql, TECNOLOGYS.Mongo],
+        imagePreviousProject: {
+            arrayUrl: [],
+        },
+    },
+    {
+        nameProject: "Organigrama Cong",
+        webURL: "https://dvnegrete.github.io/organigrama-cong/",
+        projectURLGithub: "https://github.com/dvnegrete/organigrama-cong",
+        description: [
+            "Visualizador de organigramas.",
+            "Proyecto para representar estructuras organizacionales de manera interactiva y clara."
+        ],
+        tecnologys: [TECNOLOGYS.JS, TECNOLOGYS.HTML, TECNOLOGYS.CSS],
+        imagePreviousProject: {
+            arrayUrl: [],
+        },
+    },
     {
         nameProject: "ProyectoSweb",
         webURL: "https://proyectosweb.com.mx",
