@@ -129,6 +129,10 @@ export const TECNOLOGYS = {
         name: "Jenkins",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/jenkins.svg"
     },
+    Anthropic: {
+        name: "Anthropic / Claude",
+        url: "https://cdn.simpleicons.org/anthropic"
+    },
 }
 
 export const PortfolioData: ProjectDataInterface[] = [

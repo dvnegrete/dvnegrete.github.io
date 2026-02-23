@@ -49,7 +49,7 @@ export const Iam = () => {
 
                 <p>Entusiasta de la tecnología, y desde hace {timeInTechnology()} años estoy involucrado de una manera u otra en ella. Tengo estudios truncos de Licenciatura en Ciencias de la Informática. </p>
 
-                <p><span className='container__Iam--span'>Full Stack Developer</span> con {timeOfDeveloper()} de experiencia en el ecosistema JavaScript/TypeScript. Aplico <span className='container__Iam--span'>Clean Architecture</span> y principios SOLID para escribir código mantenible y bien estructurado, trabajando bajo metodologías Scrum en entornos colaborativos de equipo.</p>
+                <p><span className='container__Iam--span'>Full Stack Developer</span> con {timeOfDeveloper()} de experiencia en el ecosistema JavaScript/TypeScript. Aplico <span className='container__Iam--span'>Clean Architecture</span> y principios SOLID para escribir código mantenible y bien estructurado, trabajando bajo metodologías Scrum en entornos colaborativos de equipo. Integro activamente herramientas de IA como <span className='container__Iam--span'>Claude Code</span> en mi flujo de desarrollo diario.</p>
 
                 <p>Comencé desarrollando proyectos personales de práctica (Wikiclone, Calculadoras, Platzi Video, Comparador de Streaming, etc.) en paralelo al sitio web del CECATI 13, proyecto que desarrollé en solitario y donde pude pulir mi habilidad con <span className='container__Iam--span'>JavaScript</span> y construir fundamentos sólidos de HTML y CSS. </p>
 
@@ -59,7 +59,9 @@ export const Iam = () => {
 
                 <p>En el Backend, desarrollo con <span className='container__Iam--span'>Node.js</span> usando ExpressJS y <span className='container__Iam--span'>NestJS</span>, aplicando Clean Architecture y Dependency Injection. Manejo bases de datos relacionales (MySQL, PostgreSQL con Prisma) y no relacionales (MongoDB, Firebase). He implementado autenticación con OAuth 2.0 y JWT.</p>
 
-                <p>En Cloud Computing, tengo experiencia práctica con <span className='container__Iam--span'>Google Cloud Platform</span> (Cloud Run, Cloud Functions, Cloud Build), Microsoft Azure (Azure Functions, Blob Storage) y AWS. Implemento CI/CD con GitHub Actions y Cloud Build. Además, he integrado <span className='container__Iam--span'>IA generativa</span> (LLMs, RAG, embeddings) en aplicaciones web.</p>
+                <p>En Cloud Computing, tengo experiencia práctica con <span className='container__Iam--span'>Google Cloud Platform</span> (Cloud Run, Cloud Functions, Cloud Build), Microsoft Azure (Azure Functions, Blob Storage) y AWS. Implemento CI/CD con GitHub Actions y Cloud Build.</p>
+
+                <p>La <span className='container__Iam--span'>IA generativa</span> es parte real de mi trabajo: uso <span className='container__Iam--span'>Claude Code</span> como asistente principal en el desarrollo para acelerar ciclos, revisar arquitectura y mantener calidad de código. También integro <span className='container__Iam--span'>APIs de LLMs</span> (Anthropic, OpenAI) en aplicaciones. Me mantengo activo en el ecosistema de herramientas de desarrollo asistido por IA — he evaluado Cursor y actualmente exploro Antigravity.</p>
 
             </div>
         </section>

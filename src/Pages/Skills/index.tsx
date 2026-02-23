@@ -15,6 +15,12 @@ const ARCHITECTURE_SKILLS = [
     'Scrum / Metodologías Ágiles',
 ];
 
+const AI_SKILLS = [
+    'Claude Code',
+    'Prompt Engineering',
+    'LLMs API (Anthropic, OpenAI)',
+];
+
 export const Skills = () => {
     return (
         <>
@@ -30,6 +36,19 @@ export const Skills = () => {
                     }
                     {
                         CONSTANTS_SKILLS.map(skill => (
+                            <li className='animate__animated animate__fadeInDownBig'>
+                                <p>{skill}</p>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </section>
+
+            <h2 className='title--certifications'>IA & Herramientas</h2>
+            <section className='section__skills'>
+                <ul className='skills__img'>
+                    {
+                        AI_SKILLS.map(skill => (
                             <li className='animate__animated animate__fadeInDownBig'>
                                 <p>{skill}</p>
                             </li>
