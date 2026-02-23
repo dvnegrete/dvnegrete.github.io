@@ -3,7 +3,6 @@ import './styles.css'
 export const Iam = () => {
     const tecnologyInit = new Date("2008-01-02");
     const devInit = new Date("2021-04-10");
-    const typescriptInit = new Date("2022-07-01")
 
     const calcTime = (timeInit: Date) => {
         const today = new Date();
@@ -40,11 +39,6 @@ export const Iam = () => {
         return <span>{years}</span>;
     }
 
-    const timeWithTs = () => {
-        const { years } = calcTime(typescriptInit);
-        return <span>{years}</span>;
-    }
-
     return (
         <section className='section__Iam'>
             <figure>
@@ -55,19 +49,17 @@ export const Iam = () => {
 
                 <p>Entusiasta de la tecnología, y desde hace {timeInTechnology()} años estoy involucrado de una manera u otra en ella. Tengo estudios truncos de Licenciatura en Ciencias de la Informática. </p>
 
-                <p>Actualmente tengo <span className='container__Iam--span'> {timeOfDeveloper()} de experiencia como developer</span>. Considero tener un nivel Semi-Senior; soy meticuloso y dedicado, también autodidacta y no necesito supervisión, puedo trabajar y entregar lo que se requiere, aunque eso me pueda tomar un poco más de tiempo. </p>
+                <p><span className='container__Iam--span'>Full Stack Developer</span> con {timeOfDeveloper()} de experiencia en el ecosistema JavaScript/TypeScript. Aplico <span className='container__Iam--span'>Clean Architecture</span> y principios SOLID para escribir código mantenible y bien estructurado, trabajando bajo metodologías Scrum en entornos colaborativos de equipo.</p>
 
-                <p>Comencé desarrollando proyectos personales de práctica (Wikiclone, Calculadoras, Platzi Video, Comparador de Streaming, etc.) en paralelo al sitio web del CECATI 13, proyecto que desarrollé en solitario y donde pude pulir mi habilidad con <span className='container__Iam--span'>JavaScript</span> y tener fundamentos sólidos de HTML y CSS. </p>
+                <p>Comencé desarrollando proyectos personales de práctica (Wikiclone, Calculadoras, Platzi Video, Comparador de Streaming, etc.) en paralelo al sitio web del CECATI 13, proyecto que desarrollé en solitario y donde pude pulir mi habilidad con <span className='container__Iam--span'>JavaScript</span> y construir fundamentos sólidos de HTML y CSS. </p>
 
-                <p>Trabaje en Agile Thought, asignado la mayor parte del tiempo a proyectos en Citibanamex Empresarial, donde colabore en equipos de desarrollo de software, principalmente como <span className='container__Iam--span'>Frontend </span>. Aquí usamos herramientas de gestión de Atlassian (JIRA, Confluence, Bitbucket), las cuales ahora están dentro de mis skills técnicos. </p>
+                <p>Trabajé en Agile Thought, asignado la mayor parte del tiempo a proyectos en <span className='container__Iam--span'>Citibanamex Empresarial</span>, donde colaboré en equipos de desarrollo de software en roles tanto de Frontend como de Backend. Usamos herramientas de gestión de Atlassian (JIRA, Confluence, Bitbucket) y flujos de trabajo Scrum en todo el ciclo de desarrollo.</p>
 
-                <p>En la parte Frontend he tocado varios Frameworks o librerías, de acuerdo a las necesidades del proyecto, y aunque no tengo un favorito me inclino un poco más por React. Y desde hace {timeWithTs()} años que comencé a usar <span className='container__Iam--span'>TypeScript</span>, trato de implementarlo en todos los proyectos posibles. También estoy usando Astro para generar sitios web orientados a contenidos.</p>
+                <p>En el Frontend he trabajado con <span className='container__Iam--span'>React, Vue.js y Angular</span>, adaptándome a las necesidades de cada proyecto. Procuro utilizar <span className='container__Iam--span'>TypeScript</span> en todos los proyectos posibles. También uso Astro para sitios orientados a contenidos y StencilJS para Web Components.</p>
 
-                <p>En la parte del Backend, uso NodeJS, principalmente con ExpressJS y más recientemente NextJS; y aunque prefiero usar bases de datos no relacionales como MongoDB o Firebase por la agilidad con que permiten construir una aplicación, uso MySQL en algunos proyectos. He implementado una funcionalidad de autenticación con OAuth 2.0.</p>
+                <p>En el Backend, desarrollo con <span className='container__Iam--span'>Node.js</span> usando ExpressJS y <span className='container__Iam--span'>NestJS</span>, aplicando Clean Architecture y Dependency Injection. Manejo bases de datos relacionales (MySQL, PostgreSQL con Prisma) y no relacionales (MongoDB, Firebase). He implementado autenticación con OAuth 2.0 y JWT.</p>
 
-                <p>En lo que respecta a Cloud Computing, tengo los conocimientos necesarios para usar los servicios Saas o Paas que se ofrecen en muchos de los proveedores de este servicio. He trabajado Google Cloud Plataform, Microsoft Azure, Amazon Web Service, Heroku, Railway y Render. He implementado en mis proyectos conceptos de DevOps, para un CI/CD en los despliegues de los cambios en los proyectos que tengo, siendo en Github Actions, una de las configuraciones mas comunes que implemento para generar un flujo de CI/CD. </p>
-
-                <p>Como me gusta pensar y trabajar en soluciones, siempre estoy dispuesto a escuchar distintas alternativas y procuro ver como implementar esas alternativas. </p>
+                <p>En Cloud Computing, tengo experiencia práctica con <span className='container__Iam--span'>Google Cloud Platform</span> (Cloud Run, Cloud Functions, Cloud Build), Microsoft Azure (Azure Functions, Blob Storage) y AWS. Implemento CI/CD con GitHub Actions y Cloud Build. Además, he integrado <span className='container__Iam--span'>IA generativa</span> (LLMs, RAG, embeddings) en aplicaciones web.</p>
 
             </div>
         </section>
