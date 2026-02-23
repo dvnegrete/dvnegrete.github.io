@@ -7,6 +7,14 @@ const CONSTANTS_SKILLS = [
     'OAuth 2.0',
 ];
 
+const ARCHITECTURE_SKILLS = [
+    'Clean Architecture',
+    'Principios SOLID',
+    'Design Patterns',
+    'Dependency Injection',
+    'Scrum / Metodologías Ágiles',
+];
+
 export const Skills = () => {
     return (
         <>
@@ -22,6 +30,19 @@ export const Skills = () => {
                     }
                     {
                         CONSTANTS_SKILLS.map(skill => (
+                            <li className='animate__animated animate__fadeInDownBig'>
+                                <p>{skill}</p>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </section>
+
+            <h2 className='title--certifications'>Arquitectura & Buenas Prácticas</h2>
+            <section className='section__skills'>
+                <ul className='skills__img'>
+                    {
+                        ARCHITECTURE_SKILLS.map(skill => (
                             <li className='animate__animated animate__fadeInDownBig'>
                                 <p>{skill}</p>
                             </li>

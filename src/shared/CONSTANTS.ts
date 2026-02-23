@@ -49,6 +49,14 @@ export const TECNOLOGYS = {
         name: "NextJS",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/nextjs.svg"
     },
+    NestJS: {
+        name: "NestJS",
+        url: "https://cdn.simpleicons.org/nestjs/E0234E"
+    },
+    TanStackQuery: {
+        name: "TanStack Query",
+        url: "https://cdn.simpleicons.org/reactquery/FF4154"
+    },
     Node: {
         name: "NodeJS",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/node-js.svg"
@@ -64,6 +72,10 @@ export const TECNOLOGYS = {
     MySql: {
         name: "MySql",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/mysql.svg"
+    },
+    Prisma: {
+        name: "Prisma",
+        url: "https://cdn.simpleicons.org/prisma/2D3748"
     },
     Azure: {
         name: "Azure",
@@ -104,6 +116,10 @@ export const TECNOLOGYS = {
     JEST: {
         name: "JEST",
         url: "https://github-personal-dvn.s3.us-east-2.amazonaws.com/img/jest.svg"
+    },
+    GitHubActions: {
+        name: "GitHub Actions",
+        url: "https://cdn.simpleicons.org/githubactions/2088FF"
     },
     Docker: {
         name: "Docker",
